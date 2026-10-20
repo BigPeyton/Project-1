@@ -1,0 +1,4 @@
+# Financial model and local application: Python 3.10+ standard library only.
+# No third-party runtime packages or credentials are required.
+# Validated development environment: CPython 3.12.14 on Windows 11.
+# PDF authoring is optional and separate; see docs/document-review.md.
