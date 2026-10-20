@@ -1,0 +1,21 @@
+{
+  "Decision-Memo.pdf": {
+    "pages": 2,
+    "sha256": "22bd5908b1fb3740d8f056f3f2fd67d6ec91ac6d2ad21757a75a5a768c04ae23"
+  },
+  "Research-Evolution.pdf": {
+    "pages": 7,
+    "sha256": "f968b9e8b069038da5ecd6291a2c88fe19c25cb854b01eb5439af1bdba8e01e7"
+  },
+  "Validation-and-AI-Use.pdf": {
+    "pages": 6,
+    "sha256": "7f8a8b09e89985021a95d14e994b3114ac69ab00044f83fd1e35823d25bf4553"
+  },
+  "source_markdown_sha256": {
+    "decision-memo.md": "292a9cefbbf527471f6c0d8ef691151fc994a733073967383ae53cbbd5be0990",
+    "research-evolution.md": "c9dafd9cdcd0643ceeb1c6f13807c990641bbce9a95ddfb53fac494114230fc9",
+    "validation-and-ai-use.md": "fb61885609f0ce5ea461be0d086c3f2c774d0a42675d17021dd55620e422ddc5"
+  },
+  "original_edition_a_sha256": "50749a9b74b77cacf0176b1fb9e6e59f596117bc906f5b499cb72e0ef4c9683d",
+  "status": "Review PDFs; student locked exercise and recorded cold run absent; no submission receipt."
+}
