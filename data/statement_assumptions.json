@@ -1,0 +1,268 @@
+{
+  "units": "USD millions; days and decimal fractions as labeled",
+  "cutoff": "2026-09-10T16:00:00-04:00",
+  "prepared": "2026-10-19",
+  "source": {
+    "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm",
+    "published": "2026-08-10"
+  },
+  "reported_supplement": {
+    "customer_financing_current": 9,
+    "customer_financing_noncurrent": 23.15,
+    "h1_cash_tax_paid": 0.464,
+    "remaining_2026_intangible_amortization": 23.205,
+    "intangible_amortization_2027_2030": [
+      39.749,
+      36.526,
+      34.275,
+      30.497
+    ],
+    "indefinite_intangibles": 0.5,
+    "unpaid_capex": 15.371,
+    "contract_loss_provision": 4.657,
+    "notes_principal": 13.366,
+    "notes_coupon": 0.0425,
+    "notes_effective_rate": 0.05,
+    "locators": "Note 3 customer financing; cash-flow supplemental disclosures; Note 10 amortization; Note 11 notes; Note 15 provision"
+  },
+  "opening_classification": {
+    "finance_lease_current_estimate": 0.353,
+    "earnout": 13.674,
+    "financing_fee_payable": 12.763,
+    "seller_payable": 0.8,
+    "note": "Extract identified claims from the combined trade/accrual/current/other-noncurrent liability pool, never add them on top of the reported total. Settlement status and some source-line allocations are estimates. Remaining ordinary pool is modeled as operating liabilities; do not claim a precise DPO."
+  },
+  "common": {
+    "cash_floor": 200,
+    "cash_yield": 0.035,
+    "customer_financing_yield": 0.075,
+    "debt_interest_rate": 0.06,
+    "finance_lease_interest_rate": 0.06,
+    "annual_finance_lease_principal": 0.298,
+    "ppe_depreciation_rate": 0.09,
+    "finance_rou_depreciation_rate": 0.15,
+    "tax_rate": 0.25,
+    "loss_year_cash_tax_revenue_rate": 0.0011,
+    "deferred_tax_runoff_years": 5,
+    "conditional_equity_price": 30.98,
+    "conditional_equity_fee": 0.02
+  },
+  "cases": {
+    "base": {
+      "ar_days": [
+        47,
+        45,
+        43,
+        42,
+        42
+      ],
+      "contract_asset_ratio": [
+        0.105,
+        0.1,
+        0.095,
+        0.09,
+        0.09
+      ],
+      "inventory_days": [
+        175,
+        165,
+        155,
+        150,
+        145
+      ],
+      "prepaid_ratio": [
+        0.12,
+        0.115,
+        0.11,
+        0.105,
+        0.1
+      ],
+      "ordinary_liability_cost_ratio": [
+        0.27,
+        0.265,
+        0.26,
+        0.255,
+        0.25
+      ],
+      "advance_revenue_ratio": [
+        0.36,
+        0.34,
+        0.32,
+        0.3,
+        0.28
+      ],
+      "ppe_additions": [
+        120,
+        180,
+        200,
+        220,
+        240
+      ]
+    },
+    "downside": {
+      "ar_days": [
+        62,
+        60,
+        58,
+        57,
+        57
+      ],
+      "contract_asset_ratio": [
+        0.135,
+        0.13,
+        0.125,
+        0.12,
+        0.12
+      ],
+      "inventory_days": [
+        205,
+        195,
+        185,
+        180,
+        175
+      ],
+      "prepaid_ratio": [
+        0.14,
+        0.135,
+        0.13,
+        0.125,
+        0.12
+      ],
+      "ordinary_liability_cost_ratio": [
+        0.25,
+        0.245,
+        0.24,
+        0.235,
+        0.23
+      ],
+      "advance_revenue_ratio": [
+        0.28,
+        0.26,
+        0.24,
+        0.22,
+        0.2
+      ],
+      "ppe_additions": [
+        140,
+        210,
+        225,
+        220,
+        210
+      ]
+    },
+    "upside": {
+      "ar_days": [
+        42,
+        40,
+        38,
+        37,
+        37
+      ],
+      "contract_asset_ratio": [
+        0.095,
+        0.09,
+        0.085,
+        0.08,
+        0.08
+      ],
+      "inventory_days": [
+        160,
+        150,
+        140,
+        135,
+        130
+      ],
+      "prepaid_ratio": [
+        0.11,
+        0.105,
+        0.1,
+        0.095,
+        0.09
+      ],
+      "ordinary_liability_cost_ratio": [
+        0.28,
+        0.275,
+        0.27,
+        0.265,
+        0.26
+      ],
+      "advance_revenue_ratio": [
+        0.4,
+        0.38,
+        0.36,
+        0.34,
+        0.32
+      ],
+      "ppe_additions": [
+        160,
+        250,
+        300,
+        350,
+        400
+      ]
+    }
+  },
+  "conventions": {
+    "capex": "First additions entry is H2 2026 NEW PP&E, not FY2026 cash capex. Pay the separate 15.371 opening payable in Q4 without adding it to PP&E again. Subsequent additions are annual cash purchases.",
+    "compensation": "Forward compensation, including the economic cost represented by ordinary SBC, is assumed paid in cash. No forecast SBC addback or free future share issuance. Actual H1 SBC remains reported. This cash-replacement scenario is not an assertion about actual future award settlement; existing dilution is analyzed separately.",
+    "timing": "Q3 operations, working-capital movements and capex accrue evenly for the September 10 estimate: 72/92 of Q3 is pre-cutoff. The known September exercise cash receipt is wholly pre-cutoff. Remaining Q3 and Q4 cash flows are future. Supersedes historical-burn cash interpolation for integrated analysis.",
+    "claims": "Notes assumed to convert at the start of Q4 at their then net book value; this is a scenario, not a verified conversion. Other borrowings, financing fees and seller payable settle in Q4; earnout settles as a cash-equivalent claim in 2027 (actual terms may be stock). These nonoperating payments stay out of FCFF and are deducted once in the cutoff bridge.",
+    "lease": "Finance ROU depreciates, liability pays principal plus interest, with no new finance leases. Operating ROU and noncurrent lease liabilities held at carrying value under a steady renewal approximation; rent remains in operating cost and cash. Unidentified current operating-lease accruals remain in the ordinary-liability pool; this is a material simplification to stress.",
+    "tax": "Cash-tax proxy is max(25% of positive taxable-profit proxy, 0.11% of revenue). No loss-year refund or unverified NOL benefit. Model reported DTA/DTL runoff over five years; book tax equals cash tax plus net deferred expense. This is an approximation, not a jurisdictional tax return.",
+    "contract_loss": "Opening provision is used in Q4: release credits reported-style EBIT against costs already included in the operating scenario, and the indirect CFO adjustment reverses the credit. Do not deduct the same operating loss twice.",
+    "customer_financing": "32.150 stays separately classified at book value, no new lending or collections assumed. Interest is nonoperating and excluded from FCFF. A future value bridge may add a separately qualified realizable value once.",
+    "residuals": "Goodwill, other noncurrent operating assets, restricted cash and operating lease balances held constant; no goodwill added to DCF. Existing intangibles amortize on the published schedule; ongoing R&D is expensed and assumed to support replacement technology. No new acquisitions/FX/OCI forecast.",
+    "funding": "Sell marketable securities if needed to protect 200 cash floor. Default model fails on external-funding shortfall. An explicitly labeled conditional-equity diagnostic may raise only the gap at 30.98 with 2% fee; not committed financing. Carry funding/dilution consistently into later valuation."
+  },
+  "driver_challenges": [
+    {
+      "driver": "Working-capital paths",
+      "values": "cases.* ar_days, contract_asset_ratio, inventory_days, prepaid_ratio, ordinary_liability_cost_ratio, advance_revenue_ratio",
+      "basis": "June annualized ratios anchor AR about 47 days, inventory about 178 days, contract assets about 10.8% of revenue and advances about 40.4%. Base assumes modest collection/inventory improvement and declining advance support. Downside strains each; upside improves efficiency.",
+      "challenge": "Half-year annualization and acquired balances distort ratios; contract advances are obligations, not permanent free capital.",
+      "change_evidence": "Aging, inventory build plans, delivery milestones and advance collection/fulfillment schedules."
+    },
+    {
+      "driver": "PP&E additions",
+      "values": "cases.*.ppe_additions",
+      "basis": "Analyst H2 and annual capacity/investment paths; H1 cash purchases were 53.112. Base H2 new additions 120, then 180/200/220/240. Upside requires more capacity; downside carries delay spend.",
+      "challenge": "No verified capacity-to-capex engineering model; insufficient investment could invalidate revenue. Unpaid capex is a separate prior asset purchase.",
+      "change_evidence": "Disclosed committed plant/launch spending, production capacity, commissioning and maintenance needs."
+    },
+    {
+      "driver": "D&A",
+      "values": "common depreciation rates; reported_supplement amortization",
+      "basis": "PP&E 9% of average opening/addition base and finance ROU 15% annual decline are analyst rates; intangible amortization uses June Note 10 schedule.",
+      "challenge": "Useful lives and construction in progress may differ; total D&A is already inside projected costs.",
+      "change_evidence": "Asset-class/CIP roll-forward and actual depreciation schedule; reconcile allocation before changing EBIT."
+    },
+    {
+      "driver": "Taxes",
+      "values": "common tax_rate, loss_year_cash_tax_revenue_rate, deferred_tax_runoff_years",
+      "basis": "25% positive-profit scenario rate, 0.11% revenue minimum near H1 cash-tax/revenue ratio, no unverified NOL credit; five-year deferred runoff is an analyst approximation.",
+      "challenge": "Profitable foreign entities, tax bases, NOL limits and timing can differ materially from consolidated pretax income.",
+      "change_evidence": "Jurisdictional taxable income, loss usage and temporary-difference reversal schedule."
+    },
+    {
+      "driver": "Interest and liquidity",
+      "values": "common yields, interest rates, cash_floor",
+      "basis": "3.5% cash/securities yield is a round scenario rate; 7.5% customer-loan yield broadly matches H1 interest; 6% borrowing/lease cost is a proxy; reserve 200 retained from earlier bridge.",
+      "challenge": "Rates, restricted availability and claim settlement differ; book value is not market claim value.",
+      "change_evidence": "Dated instrument yields and debt/lease terms, cash restrictions and known settlement records."
+    },
+    {
+      "driver": "Settlement, residual and compensation policies",
+      "values": "conventions",
+      "basis": "Explicit accounting simplifications preserve the reported opening totals while connecting future costs and cash. Cash compensation replacement keeps labor economic cost.",
+      "challenge": "Approximate maturity, award settlement, operating lease renewal, financial-receivable recoverability and residual balances can alter liquidity/value.",
+      "change_evidence": "Instrument-by-instrument schedules; test alternatives and qualify conclusions until verified."
+    },
+    {
+      "driver": "Conditional funding",
+      "values": "common.conditional_equity_price and conditional_equity_fee",
+      "basis": "Diagnostic only: half the approved 61.96 reference quote and 2% issuance fee.",
+      "challenge": "Market may not provide financing at any price; price/fee are not a commitment.",
+      "change_evidence": "Pre-cutoff committed financing terms or a decision to defer until financing is secured."
+    }
+  ]
+}

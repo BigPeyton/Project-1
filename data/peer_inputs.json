@@ -1,0 +1,43 @@
+{
+  "cutoff": "2026-09-10T16:00:00-04:00",
+  "price_date": "2026-09-10",
+  "revenue_period": "2025-12-31",
+  "definition": "Market equity plus financial debt, seller/warrant/noncommon claims, NCI and ALL lease liabilities, less unrestricted cash and liquid investments. Book/principal proxies explicitly qualified. Revenue is reported consolidated FY2025, not adjusted net-of-pass-through revenue.",
+  "target_current_operating_lease_proxy": 10.816,
+  "target_lease_proxy_source": "FY2025 10-K Note 16 current operating lease balance carried forward as an analyst proxy; June noncurrent balance from integrated model. Stress current proxy +/- 5 million. Not a reported September total.",
+  "peers": [
+    {
+      "ticker": "RDW", "currency": "USD", "financial_currency": "USD", "price": 10.87, "price_date": "2026-09-10", "shares_m": 249.992609, "shares_date": "2026-08-03", "balance_date": "2026-06-30", "revenue_period": "2025-12-31", "published": "2026-08-06",
+      "revenue": 335.381, "reported_operating_income": -229.677, "cash": 556.967, "liquid_investments": 0,
+      "claims": {"gross_borrowings": 48.875, "seller_notes": 3.171, "operating_leases": 37.243, "finance_leases": 1.800, "warrant_liability": 0.692, "noncontrolling_interests": 0, "preferred": 0},
+      "decision": "Qualified: space systems overlap, major defense/autonomy and acquisition differences",
+      "limitations": "June cash/claims and August shares carried to cutoff; no comprehensive intervening-ATM roll-forward verified. Equity uses issued shares, not options/RSUs. Partial-year Edge Autonomy revenue and one-time charges distort annual multiples/margins. Principal/lease/warrant book values are proxies, not September quotes.",
+      "sources": {
+        "annual": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000029/rdw-20251231.htm",
+        "quarterly": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000124/rdw-20260630.htm",
+        "filing_date": "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000124/0001819810-26-000124-index.html",
+        "price": "https://stockanalysis.com/stocks/rdw/history/",
+        "locators": "Annual consolidated income statement/segment reconciliation; Q cover issued shares, balance sheet claims, Note B cash/restricted split, Note H gross debt; historical Close column September 10. Filing date verified; no publication hour asserted."
+      }
+    },
+    {
+      "ticker": "AVIO", "currency": "EUR", "financial_currency": "EUR", "price": 28.01, "price_date": "2026-09-10", "shares_m": 46.162614, "issued_shares": 46789543, "treasury_shares": 626929, "shares_date": "2026-07-31", "balance_date": "2026-06-30", "revenue_period": "2025-12-31", "published": "2026-09-10T16:45:23+02:00",
+      "revenue": 583.690, "reported_operating_income": 11.966, "cash": 545.467263, "liquid_investments": 0,
+      "claims": {"financial_liabilities": 0.021627, "all_ifrs_leases": 9.744270, "noncontrolling_interests": 10.571569, "preferred": 0},
+      "decision": "Qualified: Vega launch/Ariane propulsion overlap, European institutional and defense mix differs",
+      "limitations": "Issued shares less treasury, not weighted-average EPS shares. Pending Advent issuance/proceeds excluded together. Book NCI and lease values are proxies. Cash includes customer advances economically funding operations; full cash subtraction may overstate excess liquidity. Minority investments retained in EV can inflate numerator relative to consolidated revenue. IFRS, pass-through revenue and capitalized development differ from RKLB. Reported EBIT includes its issuer presentation conventions, not adjusted EBIT.",
+      "sources": {
+        "annual": "https://avio-data.teleborsa.it/2026%2FAvio-2025-Annual-Report_20260331_093610.pdf",
+        "quarterly_release": "https://www.emarketstorage.it/sites/default/files/comunicati/2026-09/20260910_188984.pdf",
+        "shares": "https://www.emarketstorage.it/sites/default/files/comunicati/2026-07/20260731_187680.pdf",
+        "price": "https://stockanalysis.com/quote/bit/AVIO/history/",
+        "locators": "Annual Note 3.28 reported revenues and page 35 reported EBIT; July notice page 2 issued/treasury shares; Sept release cover timestamp, pages 6-7 balance sheet and page 12 net financial debt reconciliation. Close column September 10."
+      }
+    }
+  ],
+  "challenge_record": [
+    {"driver": "Peer inclusion", "value": "RDW and AVIO, qualified", "basis": "Original Lab 8 policy/candidates; final policy documented before refresh", "challenge": "Two heterogeneous firms do not establish a statistical range or mature margin benchmark", "change_evidence": "Comparable segment economics, new eligible public issuer, acquisition-pro-forma data"},
+    {"driver": "Historical multiples", "value": "EV/reported FY2025 revenue and P/S", "basis": "Same-date local price; same fiscal year; own currency within each ratio; traceable shares and claims", "challenge": "Share/balance timing, financing, leases, acquisitions and pass-through revenue create material differences", "change_evidence": "Cutoff capitalization/financing roll-forward, excess-cash and NCI valuation, matched pro-forma revenue"},
+    {"driver": "Target lease adjustment", "value": "104.378 noncurrent plus 10.816 current proxy", "basis": "Lease-inclusive peer EV converted to post-rent target operating value before the existing equity bridge", "challenge": "Current balance carried from year-end; lease obligations and renewals not freshly valued", "change_evidence": "Current lease schedule; +/-5 million sensitivity"}
+  ]
+}

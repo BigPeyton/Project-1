@@ -1,0 +1,14 @@
+{
+  "exit_year": 2029,
+  "wacc": 0.16,
+  "closure_cost": 100.0,
+  "recoveries": {"receivables": 0.90, "contract_assets": 0.50, "inventory": 0.40, "prepaids": 0.10, "ppe": 0.30, "intangibles": 0.05, "goodwill": 0.0, "rou_operating": 0.0, "rou_finance": 0.50, "restricted_cash": 1.0, "deferred_tax_assets": 0.0, "other_noncurrent_assets": 0.0},
+  "settle_operating_liabilities": ["ordinary_liabilities", "contract_liabilities", "operating_lease_noncurrent", "deferred_tax_liabilities", "capex_payable", "contract_loss_provision"],
+  "classification": "Analyst orderly-exit scenario, not a liquidation appraisal, management plan or guaranteed floor",
+  "challenge_record": [
+    {"driver": "Exit timing", "value": "December 2029", "basis": "Stop before the unchanged downside requires new money in 2030; no conditional financing in this alternative.", "challenge": "Management may wait, funding may fail earlier, and orderly disposition may require time.", "change_evidence": "Liquidity forecast, committed funding, board capital allocation and contract termination conditions."},
+    {"driver": "Recovery fractions", "value": "recoveries object", "basis": "Explicit analyst haircuts to forecast assets; cash/securities excluded because already credited in cutoff equity bridge; customer financing excluded consistently with zero recovery reference.", "challenge": "No buyer bid or asset appraisal. Specialized inventory/launch assets and restricted cash may be unrecoverable; proceeds may be delayed.", "change_evidence": "Independent appraisal, collateral/transfer restrictions, receivable collections and credible bids; stress PPE and inventory haircuts."},
+    {"driver": "Obligations and closure", "value": "Full listed operating liabilities plus 100 million closure cost", "basis": "Assume full customer advance refunds and ordinary liability settlement, remaining noncurrent operating lease settlement, tax liability payment; separate financial claims already deducted in equity bridge.", "challenge": "No legal claim-priority analysis; full refunds may be too severe or cancellation damages may be larger. Closure cost is a placeholder scenario.", "change_evidence": "Contract-specific termination, employee, environmental, tax and landlord estimates; stress closure cost 50-250 million."},
+    {"driver": "Cash reserve release", "value": "200 at exit", "basis": "Reference deducts operating cash at cutoff; this reserve is released once when operations cease.", "challenge": "Reserve might be consumed during disposition; never add all year-end cash again.", "change_evidence": "Detailed exit cash-flow schedule and restricted/pledged balance review."}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "prepared_on": "2026-10-19",
+  "cutoff": "2026-09-10T16:00:00-04:00",
+  "price_source": "https://stockanalysis.com/stocks/rklb/history/",
+  "price_locator": "September 10, 2026 close, USD 61.96; later observations excluded",
+  "wacc_bounds": [0.031, 0.20],
+  "margin_bounds": [0.04, 0.80],
+  "grid_intervals": 40,
+  "challenge_record": [
+    {"driver": "Reverse discount rate", "value": "3.1%-20% mathematical search, perpetual growth held at 3%", "basis": "Find the rate reproducing the cutoff quote with the existing operating path and equity bridge", "challenge": "A root below the Treasury rate is not a defensible risk-adjusted required return; no global monotonicity claim for signed cash flows", "change_evidence": "Different documented operating expectations, scope, risk or capitalization"},
+    {"driver": "Reverse mature margin", "value": "4%-80% bounded diagnostic", "basis": "Change the entire 2031-2040 margin fade and associated capital efficiency, not just terminal cash flow", "challenge": "80% is an intentionally extreme search ceiling, not an investable scenario; failure to bracket does not rule out different revenue paths", "change_evidence": "Sustained segment profitability and evidence-supported revenue/capital paths"},
+    {"driver": "Residual terminal requirement", "value": "Market-required terminal FCFF, holding every explicit cash flow fixed", "basis": "Invert the equity bridge and discounted terminal value algebra", "challenge": "A discontinuous terminal jump is a diagnostic, not a valid replacement forecast; excludes transaction economics and optional financing", "change_evidence": "A coherent revised explicit forecast with continuity, funding and source support"}
+  ]
+}

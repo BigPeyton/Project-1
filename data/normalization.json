@@ -1,0 +1,50 @@
+{
+  "units": "USD thousands",
+  "prepared": "2026-10-19",
+  "information_cutoff": "2026-09-10T16:00:00-04:00",
+  "classification": "AI-assisted analyst normalization policy, separate from reported accounting and subject to student review",
+  "sources": {
+    "K25": {"url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm", "published": "2026-02-26"},
+    "Q26": {"url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm", "published": "2026-08-10"},
+    "RELEASE26": {"url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000061/rklb-08102026ex991.htm", "published": "2026-08-10"}
+  },
+  "adjustments": [
+    {
+      "id": "beck_cancelled_rsus", "period": "h1_2026", "line": "sga", "expense_amount": 11180,
+      "treatment": "remove_from_run_rate", "noncash_sbc": true,
+      "source_id": "Q26", "locator": "Note 13, March 30 RSU cancellation paragraph",
+      "basis": "Identified cancellation charge; no future expense or vesting from these awards.",
+      "challenge": "Does not establish that total future compensation falls; replacement incentives or spending may offset it.",
+      "change_evidence": "New compensation commitments or a correction to the cancellation disclosure."
+    },
+    {
+      "id": "transaction_costs", "period": "h1_2026", "line": "sga", "expense_amount": 10244,
+      "treatment": "retain", "noncash_sbc": false,
+      "source_id": "RELEASE26", "locator": "Six-month non-GAAP SG&A reconciliation",
+      "basis": "Conservative recurring acquisition-cost allowance; do not assume transaction spending disappears while pursuing acquisitions.",
+      "challenge": "Specific completed-deal costs may not recur at the same rate.",
+      "change_evidence": "Deal-level cost schedule separating completed transactions, committed future costs and steady-state overhead."
+    },
+    {
+      "id": "inventory_step_up", "period": "h1_2026", "line": "cost_of_revenue", "expense_amount": 183,
+      "treatment": "retain", "noncash_sbc": false,
+      "source_id": "RELEASE26", "locator": "Six-month gross-profit reconciliation",
+      "basis": "Retain purchased-inventory basis in baseline; no unsupported cash benefit from reversing purchase accounting.",
+      "challenge": "Finite acquisition accounting charge can be separated when the inventory roll-forward is modeled.",
+      "change_evidence": "Acquired-inventory consumption and replacement-cost schedule."
+    }
+  ],
+  "h1_2026_release_crosscheck": {
+    "source_id": "RELEASE26", "locator": "Six-month EBITDA and operating-loss reconciliations",
+    "depreciation": 17686, "amortization": 18247,
+    "sbc_cost_of_revenue": 8596, "sbc_rd": 12780, "sbc_sga": 26301,
+    "company_non_gaap_operating_income": -37694
+  },
+  "fy2025_policy": "No operating addback accepted from reviewed evidence. Keep reported EBIT as the conservative operating baseline; bridge out reported taxes and all below-operating items separately. This is a judgment, not proof that every expense recurs.",
+  "retained_risks": [
+    {"item": "FY2025 contract estimate revision", "amount": 7900, "source_id": "K25", "locator": "MD&A Revenue, page 47", "treatment": "Retain downward revenue adjustment; execution overruns are a relevant operating risk, not automatic lost revenue to restore."},
+    {"item": "R&D and ordinary SBC", "source_id": "Q26", "locator": "Income statement and cash flow statement", "treatment": "Retain economic costs. Do not capitalize R&D without a complete consistent asset/amortization schedule."},
+    {"item": "FY2025 tax benefit", "amount": 27688, "source_id": "K25", "locator": "Income statement; MD&A taxes; Note 18", "treatment": "Bridge reported tax out of net income to reach EBIT; do not extrapolate tax benefit or classify its entirety as a quantified one-time item. Model cash taxes and loss usage separately."},
+    {"item": "Acquired operations", "source_id": "K25", "locator": "Note 4", "treatment": "Keep owned operations in reported base; consolidated growth is not a clean organic growth estimate. Future acquisition growth requires its purchase cost and financing."}
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "cutoff": "2026-09-10",
+  "units": "USD millions and million shares; prices USD per share",
+  "scope": "Standalone Rocket Lab; pending Iridium operations, consideration, bridge borrowing and issuance excluded together. Accrued existing financing fee remains a claim.",
+  "reference": {"customer_financing_recovery": 0.0, "capped_call_credit": 0.0, "additional_atm_gross": 0.0, "forward_credit": 0.0},
+  "notes": {"coupon_rate": 0.0425, "straight_debt_discount_rate": 0.06, "remaining_payment_dates": ["2027-02-01", "2027-08-01", "2028-02-01", "2028-08-01", "2029-02-01"], "maturity": "2029-02-01"},
+  "forward": {"assumed_settlement": "2028-04-30", "minimum_proceeds": 474.0, "maximum_proceeds": 642.0, "discount_rate": 0.16},
+  "capped_call": {"assumed_settlement": "2029-01-30", "maximum_payoff": 201.9, "discount_rate": 0.16},
+  "atm": {"gross_capacity": 1944.369826, "fee_rate": 0.02, "illustrative_issue_prices": [61.96, 30.98]},
+  "sources": {
+    "quarterly": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm",
+    "note_locator": "Note 11: 4.25% coupon, February/August payments, February 1 2029 maturity; Note 6: June fair value",
+    "forward_locator": "Note 12: collared forward, 7,451,200 shares, April 2028 expected proceeds 474-642 million; no H1 receipts",
+    "capped_call_locator": "MD&A liquidity: tranches December 1 2028-January 30 2029, maximum aggregate payoff approximately 201.9 million",
+    "atm": "https://www.sec.gov/Archives/edgar/data/1819994/000175392626001463/g085846_8k.htm",
+    "rechecked_on": "2026-10-19"
+  },
+  "challenge_record": [
+    {"driver": "Cutoff liquidity and reserve", "value": "Integrated scenario cutoff cash + securities - 200 reserve", "basis": "Use matching three-statements output; reserve is an analyst operating-cash allowance.", "challenge": "Cutoff balance is interpolated, not reported; reserve is not independently established.", "change_evidence": "Dated cash/settlement disclosures and operating liquidity requirements. Stress reserve 100 and 300."},
+    {"driver": "Customer financing", "value": "Zero reference recovery; 32.15 book-value recovery sensitivity", "basis": "Separate financial receivable; its interest is excluded from FCFF. Zero is a conservative haircut, not evidence of impairment.", "challenge": "Recoverable present value is not established; book value may understate/overstate it.", "change_evidence": "Loan maturity, credit support, payment history and market yield."},
+    {"driver": "Retained convertible claims", "value": "Explicit historical June fair value, September-price parity, and separate intrinsic-only diagnostic", "basis": "Remove conversion shares whenever an economic note claim is deducted. Straight-debt floor discounts remaining coupons/principal at assumed 6%.", "challenge": "Neither stale fair value nor parity is a current quote. Intrinsic-only diagnostic omits option time value, make-whole adjustments, credit and detailed settlement terms; it is not a fair-value estimate.", "change_evidence": "Cutoff note quote, conversion/settlement records, full instrument pricing and dated credit inputs."},
+    {"driver": "Existing options and RSUs", "value": "All existing RSUs vest; options tested at remaining weighted-average strike 1.09", "basis": "Known September exercise already in cash/common; only remaining options generate additional receipts. Exercise receipts assumed immediate for the valuation allocation.", "challenge": "Weighted-average strike conceals individual awards; award time value and vesting are not fully priced. Full exercise and no exercise are alternatives, never combined.", "change_evidence": "Award-level vesting, strike and expiry schedules; actual settlements. Future compensation remains an economic cost in FCFF."},
+    {"driver": "Forward settlement", "value": "474/642 future cash with 7.4512 new shares; midpoint-date proxy April 30 2028", "basis": "Present-value future cash at 16%, count full future share participation now; reference omission explicitly separate.", "challenge": "Exact contract tranches, settlement election, proceeds adjustments and fees not verified. Do not discount share count or assume H1 receipt.", "change_evidence": "Contract terms and dated settlement confirmations. No implication these sensitivities exhaust contract fair value."},
+    {"driver": "Capped calls", "value": "Zero reference; discounted maximum 201.9 payoff scenario", "basis": "Use final tranche date conservatively for timing, no additional shares. Not a probability-weighted asset valuation.", "challenge": "Payoff depends on future stock prices across tranches; maximum is not assured and may be implausible in the weak business case.", "change_evidence": "Actual contract valuation, hedge/settlement notices and tranche-specific forward prices."},
+    {"driver": "ATM capacity", "value": "Paired hypothetical gross cash/share issuance at 61.96 or 30.98, 2% fees", "basis": "Disclosed authorization, not verified completed cutoff sales. Treat as immediate hypothetical financing with no operating acquisition.", "challenge": "Raising at the historical quote could transfer value from new investors if above modeled value; it is not evidence of intrinsic operating upside. Funds used for acquisitions cannot remain cash while acquired operations are excluded.", "change_evidence": "Cutoff issued shares/net cash and approved use of proceeds; exclude post-cutoff announcements."}
+  ]
+}

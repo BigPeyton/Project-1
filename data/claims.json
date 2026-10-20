@@ -1,0 +1,67 @@
+{
+  "cutoff": "2026-09-10",
+  "units": "USD millions",
+  "status": "Dated reported claims plus explicit carry-forward estimates; integration with final FCFF still required",
+  "quarterly_source": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm",
+  "annual_source": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm",
+  "sources_published": {"quarterly": "2026-08-10", "annual": "2026-02-26"},
+  "other_borrowings": {
+    "amount": 1.716,
+    "as_of": "2026-06-30",
+    "locator": "10-Q page 5; long-term borrowings net",
+    "treatment": "Deduct carrying value as a small-claim proxy; no independent September fair value verified. Do not label it Trinity debt: Note 11 says Trinity was fully repaid in December 2025."
+  },
+  "finance_leases": {
+    "annual_total_current_and_noncurrent": 14.970,
+    "annual_current_component": 0.317,
+    "annual_noncurrent_component": 14.653,
+    "annual_locator": "10-K Note 16; F-37 and F-38",
+    "h1_principal_paid": 0.149,
+    "h1_locator": "10-Q page 8; finance lease principal payments",
+    "june_noncurrent_reported": 14.468,
+    "june_current_estimated": 0.353,
+    "estimate_basis": "Annual total less H1 principal = June total 14.821; less reported June noncurrent gives inferred current 0.353. Assumes no new finance leases, modifications or FX effect. Q2 Note 14 reports only an operating-lease acquisition and no other material portfolio changes. This is an estimate, not a reported current balance.",
+    "cutoff_principal_payment_estimate": "Use the same 0.149 * 72 / 181 already deducted from cash; reduce the outstanding claim by that amount too.",
+    "treatment": "Treat finance leases as financing. Deduct estimated remaining total liability. Future FCFF must exclude existing finance lease interest/principal payments while correctly including asset depreciation, capex and replacement needs. Do not deduct both a lease claim and its future debt-service cash flows."
+  },
+  "contingent_consideration": {
+    "amount": 13.674,
+    "as_of": "2026-06-30",
+    "locator": "10-Q Note 6 page 21; Level 3 roll-forward",
+    "prior_amount": 7.634,
+    "acquisition_addition": 5.654,
+    "remeasurement": 0.386,
+    "treatment": "Deduct fair-value claim once, carried forward without a new remeasurement. GEOST cash earn-out and Motiv potential stock earn-out are included. If future stock settlement is modeled through extra shares instead, remove the corresponding claim deduction. Never call the entire amount a cash payable."
+  },
+  "accrued_financing_and_seller_claims": [
+    {"name": "Accrued bridge financing issuance costs", "amount": 12.600},
+    {"name": "Accrued ATM issuance costs", "amount": 0.163},
+    {"name": "Business-combination seller payable", "amount": 0.800}
+  ],
+  "accrued_claims_locator": "10-Q page 8; supplemental noncash investing/financing disclosures; six months ended June 30",
+  "accrued_claims_assumption": "Treat as still unpaid claims in the standalone reference estimate. These supplemental period disclosures are not a verified September payable schedule. Test settlement/status uncertainty and reconcile balance-sheet classification. If payment is deducted from cutoff cash or future FCFF, remove the corresponding bridge deduction. Do not also subtract their aggregate balance-sheet liability bucket.",
+  "convertible_notes": {
+    "principal_june": 13.366,
+    "net_carrying_june": 13.129,
+    "fair_value_june": 280.789,
+    "fair_value_locator": "10-Q Note 6 page 21; convertible senior notes disclosure",
+    "remaining_conversion_shares_m": 2.607745,
+    "reference_stock_price": 61.96,
+    "converted_claim_deduction": 0,
+    "treatment": "Primary if-converted case counts conversion shares and zero note claim. Retained-note diagnostics remove conversion shares and require an explicit economic claim value. Principal-only subtraction is rejected as a current market-value proxy. June fair value is dated; September conversion parity is a diagnostic excluding time value, coupon and settlement effects, not a September note quote."
+  },
+  "operating_leases": {
+    "noncurrent_june": 104.378,
+    "locator": "10-Q page 5 and Note 14",
+    "bridge_deduction": 0,
+    "treatment": "Keep operating lease occupancy costs/cash payments in operating forecasts, including renewals. Do not also deduct operating lease liabilities. A capitalized-lease alternative would require coordinated changes to EBIT, reinvestment, WACC and peer definitions."
+  },
+  "other_items_for_model_integration": [
+    {"name": "Unpaid capex", "amount": 15.371, "locator": "10-Q page 8", "treatment": "Model payment in cash capex/asset payable roll-forward once; not automatically additional debt. Do not leave it permanently unpaid in a fixed-liability group."},
+    {"name": "Contract loss provision", "amount": 4.657, "locator": "10-Q Note 15 page 31", "treatment": "Operating fulfillment cost and provision unwind; capture in forecast once, not both a bridge deduction and operating cash costs."},
+    {"name": "Deferred tax liabilities", "amount": 10.146, "locator": "10-Q page 5", "treatment": "Reconcile reversal and cash tax forecasts; not an automatic face-value debt deduction. Do not add deferred tax assets separately if their benefits are already forecast."},
+    {"name": "Undrawn Iridium bridge commitment", "amount": 3600.0, "locator": "10-Q Note 1 and MD&A liquidity", "treatment": "Commitment is neither current cash nor drawn debt in the standalone case; accrued fees are distinct."},
+    {"name": "Capped calls", "amount": 201.9, "locator": "10-Q MD&A page 45", "treatment": "Approximate maximum aggregate future payout, not fair value or cash. Zero asset credit in the conservative reference bridge; required separate discounted payoff sensitivity and qualification. Do not shrink contractual coverage merely because notes converted."}
+  ],
+  "other_claims_scope": "No separate NCI or defined-benefit pension liability identified on reviewed consolidated statements/annual benefits note; do not invent zero-valued audited proof of absence. Normal trade liabilities belong in operating working capital. Unclassified residual liabilities remain an integration review item."
+}

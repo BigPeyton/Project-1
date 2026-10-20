@@ -1,0 +1,36 @@
+{
+  "valuation_date": "2026-09-10",
+  "opening_date": "2026-06-30",
+  "historical_start_exclusive": "2025-12-31",
+  "units": "USD millions except shares, dates, multipliers and percentages",
+  "classification": "Analyst cash estimate, not a reported September balance sheet",
+  "burn_method": "Prorate H1 reported operating cash use plus cash capex over 181 days to the 72 days after June 30. Add a separate prorated finance-lease principal outflow. This is a historical-rate estimate, not Q3 guidance or FCFF.",
+  "h1_finance_lease_principal_m": 0.149,
+  "lease_source": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm",
+  "lease_locator": "Page 8; finance lease principal payments; six months ended June 30 2026; USD thousands 149 divided by 1000",
+  "base_burn_multiplier": 1.0,
+  "base_operating_reserve_m": 200.0,
+  "reserve_basis": "Provisional analyst buffer, approximately 2.6 months of H1 cash operating expense proxy (COGS + R&D + SG&A - D&A - SBC). Excludes working-capital swings, capex and acquisition funding; test 100 to 300. Not a company requirement or dividend capacity.",
+  "base_securities_haircut": 0.0,
+  "securities_basis": "Carry June fair value, assuming no net portfolio movement or value change; marketable investments are separately disclosed from cash. Stress 2% haircut. Not a claimed September quote.",
+  "base_atm_completion_fraction": 0.0,
+  "atm_basis": "Zero additional credit in the reference case because completed proceeds by cutoff are unverified. This does not assert zero actual sales. Separate hypothetical 50%/100% authorized issuance cases pair net cash with shares at the selected price.",
+  "atm_reference_issue_price_usd": 61.96,
+  "base_atm_other_expenses_m": 0.0,
+  "atm_other_expenses_note": "Commission modeled at disclosed 2% maximum; other costs unquantified. Net proceeds scenarios before other costs are optimistic to that extent.",
+  "known_option_cash_policy": "Include only the verified September 2 exercise receipt in this cash estimate. Remaining hypothetical option proceeds belong in the equity bridge separately, net of this receipt.",
+  "excluded_additions": [
+    "Restricted cash: already outside the opening cash line; do not subtract it again",
+    "Undrawn acquisition bridge-loan commitment",
+    "Unsettled collared-forward proceeds",
+    "Post-September-10 financing completion information",
+    "Future option exercise receipts other than the verified event"
+  ],
+  "other_flow_assumptions": "No separate new acquisition payment, other financing, disposal, FX change or change in restricted cash is estimated. Unknown movements remain an uncertainty, not a statement that none occurred. H1 CFO already includes interest, taxes and operating lease payments; do not add them again.",
+  "scope": "Standalone liquidity estimate. Iridium closing and financing require a separate integrated transaction scenario; no assertion that these funds are distributable.",
+  "liquidity_scenarios": [
+    {"name": "Lower liquidity", "burn_multiplier": 1.5, "reserve_m": 300.0, "securities_haircut": 0.02},
+    {"name": "Reference", "burn_multiplier": 1.0, "reserve_m": 200.0, "securities_haircut": 0.0},
+    {"name": "Higher liquidity", "burn_multiplier": 0.5, "reserve_m": 100.0, "securities_haircut": 0.0}
+  ]
+}

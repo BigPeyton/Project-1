@@ -1,0 +1,92 @@
+{
+  "valuation_cutoff": "2026-09-10T16:00:00-04:00",
+  "reviewed_on": "2026-10-19",
+  "status": "Working disclosed-capitalization scenarios; exact September 10 issued and diluted shares not verified",
+  "share_units": "actual shares; divide by 1000000 for millions",
+  "sources": {
+    "august_prospectus": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000175392626001459/g085845_424b5.htm",
+      "filed": "2026-08-13",
+      "measurement_date": "2026-08-07",
+      "locator": "Dilution; page S-23; outstanding shares and exclusions"
+    },
+    "merger_prospectus": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000175392626001639/g085904_424b3.htm",
+      "filed": "2026-08-26",
+      "measurement_date": "2026-06-25",
+      "locator": "Annex A; section 5.05(a); Parent Capitalization Date"
+    },
+    "atm_authorization": {
+      "url": "https://www.sec.gov/Archives/edgar/data/1819994/000175392626001463/g085846_8k.htm",
+      "filed": "2026-08-13",
+      "locator": "Item 8.01; offering capacity and settlement terms"
+    },
+    "september_option_exercise": {
+      "url": "https://investors.rocketlabcorp.com/node/13271/html",
+      "accession": "0002001011-26-000136",
+      "filed": "2026-09-04",
+      "measurement_date": "2026-09-02",
+      "locator": "Tables I and II; Adam Spice; code M"
+    },
+    "filing_inventory": {
+      "url": "https://data.sec.gov/submissions/CIK0001819994.json",
+      "filter": "filingDate from 2026-08-01 through 2026-09-10 inclusive",
+      "rows_returned": 29,
+      "limitation": "Index scan plus selected capital-relevant document review; not a full review of every filing or press release"
+    }
+  },
+  "august_7_reported": {
+    "source_id": "august_prospectus",
+    "common_outstanding": 598459739,
+    "preferred_conversion_shares": 40951250,
+    "rsus": 9449364,
+    "options": 3538069,
+    "option_weighted_average_strike_usd": 1.09
+  },
+  "remaining_notes": {
+    "source_id": "merger_prospectus",
+    "conversion_shares": 2607745,
+    "principal_usd_millions_at_june_30": 13.366,
+    "net_book_usd_millions_at_june_30": 13.129,
+    "assumption": "Carry the disclosed remaining note population forward as a proxy. Later actual conversions must transfer shares from the note bucket to common, not increase both. Do not describe this as a September note balance."
+  },
+  "known_september_exercise": {
+    "source_id": "september_option_exercise",
+    "shares": 140157,
+    "strike_usd": 1.09,
+    "exercise_proceeds_usd": 152771.13,
+    "treatment": "Transfer from options to common; full-exercise share total is unchanged. Related secondary sales do not create additional company shares. This is a partial roll-forward, not a complete September capitalization."
+  },
+  "derived_scenarios": {
+    "august_common_plus_preferred": 639410989,
+    "full_vesting_full_exercise_notes_retained": 652398422,
+    "full_vesting_full_exercise_notes_converted": 655006167,
+    "gross_option_exercise_proceeds_usd": 3856495.21,
+    "converted_case_note_deduction_usd_millions": 0,
+    "retained_case_note_principal_usd_millions_reference_only": 13.366,
+    "retained_case_note_fair_value_june_usd_millions": 280.789,
+    "retained_case_warning": "CORRECTED during claims review: principal-only subtraction is not an acceptable current market-value proxy. Q2 Note 6 reports June fair value 280.789 million. Require an explicit economic retained-note claim assumption; the June quote is stale and September conversion parity is only a diagnostic. See claims.json.",
+    "calculation": "common + preferred + RSUs + options + remaining note shares in converted case; remove note shares in retained case",
+    "classification": "Analyst assumptions applied to disclosed instruments; not reported GAAP diluted shares"
+  },
+  "other_capital_items": {
+    "existing_forward_max_shares": 7451200,
+    "existing_forward_source": "Q2 2026 10-Q Note 12 page 28",
+    "existing_forward_cash_received_h1_usd": 0,
+    "atm_authorized_gross_usd": 1944369826,
+    "atm_max_sales_commission_fraction": 0.02,
+    "atm_status": "Authorization verified; proceeds and issuance completed by cutoff not verified. September 15 completion announcement excluded as hindsight.",
+    "required_treatment": "Model forward settlement and ATM financing as separate paired cash-and-share scenarios. Do not treat authorization or borrowed hedge shares as cash received or newly issued company shares. Include pending acquisition cash, debt, acquired operations and issuance consistently in a separate transaction scenario if analyzed."
+  },
+  "final_model_rules": [
+    "Working full-conversion/full-vesting/full-exercise denominator is 655.006167 million before forward/ATM/merger scenarios; preserve approximation and dates.",
+    "Credit gross option proceeds once when using full exercise; do not also use treasury-stock net dilution. Track already received proceeds separately to prevent duplication in cash.",
+    "If modeled equity value makes exercise uneconomic, test an unexercised option branch; do not mechanically assume the historical market price equals intrinsic value.",
+    "Compare note-converted and note-retained cases; do not deduct note principal or net book value in the converted case.",
+    "Preferred economic participation is included once; do not also subtract the same preferred claim as a separate equity-bridge deduction.",
+    "All-RSU-vesting is an assumption. Distinguish existing awards from future compensation and avoid ignoring future SBC economics.",
+    "Unissued equity-plan capacity is not an outstanding award. Do not add the entire authorized reserve.",
+    "No capped-call value is credited in this preliminary bridge; qualify and test this conservative omission before final recommendation.",
+    "Do not label the scenario fully diluted in an exhaustive sense: forwards, future financing and pending acquisition are shown separately."
+  ]
+}

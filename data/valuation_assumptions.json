@@ -1,0 +1,35 @@
+{
+  "cutoff": "2026-09-10T16:00:00-04:00",
+  "prepared_on": "2026-10-19",
+  "status": "Working standalone valuation assumptions; student judgment and peer benchmarking still required",
+  "discount_rate": {
+    "risk_free": 0.0483,
+    "equity_risk_premium": 0.0414,
+    "beta": 2.61,
+    "debt_cost": 0.06,
+    "immediate_interest_tax_shield": 0.0,
+    "reference_price": 61.96,
+    "selected_wacc": 0.16,
+    "wacc_grid": [0.14, 0.16, 0.18, 0.20],
+    "terminal_growth_grid": [0.02, 0.03, 0.04]
+  },
+  "terminal": {"growth": 0.03, "tax_rate": 0.25, "first_transition_year": 2031, "last_transition_year": 2040},
+  "cases": {
+    "base": {"growth_path": [0.18, 0.16, 0.14, 0.12, 0.10, 0.08, 0.06, 0.045, 0.035, 0.03], "mature_ebit_margin": 0.12, "mature_incremental_roic": 0.16},
+    "upside": {"growth_path": [0.22, 0.20, 0.18, 0.16, 0.14, 0.12, 0.10, 0.075, 0.05, 0.03], "mature_ebit_margin": 0.20, "mature_incremental_roic": 0.20}
+  },
+  "sources": {
+    "treasury": {"url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&type=daily_treasury_yield_curve", "measurement_date": "2026-09-09", "locator": "09/09/2026 row, 10 Yr column: 4.83 percent", "timing": "Previous business day used to avoid asserting the September 10 daily release was available by 4 PM. September 10 row is 4.95 percent, retained only as a comparison."},
+    "erp": {"url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm", "dated_search_url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm?trk=public_post_reshare-text", "measurement_date": "2026-09-01", "locator": "September 1 implied ERP, trailing twelve months with adjusted payout, 4.14 percent. Search-index dated excerpt corroborates live October page previous-month value.", "timing": "Recovered October 19, not an original September download. October 1 ERP 4.20 percent excluded. Monthly historical download link returned an error.", "convention": "Unadjusted US Treasury convention; do not subtract US default spread from risk-free without corresponding ERP adjustment."},
+    "beta": {"url": "https://stockanalysis.com/stocks/rklb/statistics/", "local_record": "archive/rocketlab_lab06.md", "recorded_date": "2026-09-10", "locator": "Lab 6 saved beta 2.61, labeled Beta (5Y)", "limitation": "Historical provider snapshot and regression endpoint/frequency not independently reproduced. Treated as a high-risk analyst proxy, not newly verified market data."},
+    "transition_method": {"url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/littlebook/growthvaluedrivers.htm", "locator": "Quality Growth: revenue/capital reinvestment, lags, and mature fundamentals"},
+    "terminal_method": {"url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/valquestions/termvalueexreturns.htm", "locator": "FCFF growth, reinvestment and returns on capital"}
+  },
+  "challenge_record": [
+    {"driver": "Discount rate", "value": "Computed CAPM/market-weight proxy then rounded to 16%; grid 14-20%", "basis": "Prior-day nominal Treasury, September ERP and archived lab beta. Converted-note reference; common/preferred market equity and other debt/finance leases at book as small market-value proxy.", "challenge": "Beta not independently reproduced; debt cost is not coupon or a market quote. Fixed WACC does not model declining mature risk. ERP different from old classroom 5%.", "change_evidence": "Dated return regression, bottom-up peer beta, debt quotes, capital structure or funding terms; test beta 2.0-3.2 and ERP 5%."},
+    {"driver": "2031-2040 growth", "value": "cases.*.growth_path", "basis": "Analyst ten-year fade after company-specific five-year build; base 18% to 3%, upside 22% to 3%.", "challenge": "No ten-year order book or verified total market supports these precise paths. Long runway is conditional on commercial execution.", "change_evidence": "Launch reliability, capacity, backlog conversion and space-systems organic revenue trajectory."},
+    {"driver": "Mature EBIT margin", "value": "12% base; 20% upside", "basis": "Analyst linear fade from each linked 2030 margin; includes R&D and economic compensation costs. Not issuer guidance or a measured peer median.", "challenge": "Operating leverage might never arrive; peer benchmarking and cost-overlap stress still required.", "change_evidence": "Segment profitability, sustained R&D/cost intensity, capacity utilization and mature peer margins."},
+    {"driver": "Capital efficiency", "value": "16% base; 20% upside mature incremental after-tax return", "basis": "Incremental sales/capital fades from 2030 modeled revenue increase/net reinvestment to ROIC/(mature margin * (1-tax)). Growth investment is charged one year ahead.", "challenge": "2030 anchor is a forecast, not evidence of realized returns. Marginal return is not total accounting ROIC. Sustaining replacement capex net of depreciation is assumed within net reinvestment.", "change_evidence": "Production capacity/capex schedules, working capital needs, maintenance costs and realized returns; stress lower efficiency."},
+    {"driver": "Terminal growth and taxes", "value": "3% nominal growth; 25% cash tax; 2041 first stable year", "basis": "Analyst nominal steady-state choice; 2-4% sensitivity. Positive mature income taxed without unverified NOL credit. Terminal reinvestment = NOPAT * g/ROIC.", "challenge": "No claim that 3% is a company fact. Reject g >= WACC, nonpositive mature income or reinvestment consuming all NOPAT.", "change_evidence": "Long-run demand/inflation, sustainable competitive returns and jurisdictional tax evidence."}
+  ]
+}

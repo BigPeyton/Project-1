@@ -1,0 +1,73 @@
+{
+  "units": "USD millions; margins and expense ratios are decimal fractions",
+  "prepared": "2026-10-19",
+  "cutoff": "2026-09-10T16:00:00-04:00",
+  "status": "AI-assisted working analyst assumptions; no company long-term guidance or final valuation claimed",
+  "sources": {
+    "Q26": {"url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000062/rklb-20260630.htm", "published": "2026-08-10", "locators": "Note 18 segment gross profit; MD&A costs, R&D and SG&A; Note 13 cancellation"},
+    "RELEASE26": {"url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000061/rklb-08102026ex991.htm", "published": "2026-08-10", "locators": "Q3 GAAP guidance; Q2 income statement"}
+  },
+  "historical_checks": {
+    "source_id": "Q26",
+    "h1_launch_gross_profit": 47.333,
+    "h1_space_gross_profit": 113.736,
+    "q2_rd": 82.429,
+    "q2_sga": 59.661
+  },
+  "conventions": {
+    "2026": "H1 actual reported expenses plus Q3/Q4 estimates; show the H1 cancellation separately in a normalized operating view. Do not remove it twice or alter historical cash.",
+    "gross_profit": "2026 uses consolidated quarterly GAAP-basis margin assumptions. From 2027, continuing launch and space margins include their allocated production overhead, D&A and compensation. Incremental Neutron contribution less separate fixed commercial readiness costs forms its gross profit.",
+    "neutron_cost_scope": "Fixed commercial readiness costs are an assumed manufacturing/launch-operations overhead pool, distinct from technical development in total-company R&D and from continuing-launch costs. This allocation is not disclosed by management. Avoid adding another copy during statement integration; test overlap sensitivity.",
+    "rd": "Total-company R&D, net, expensed in dollars; no invented separately reported Neutron budget or capitalization. Includes regular compensation and D&A.",
+    "sga": "2027 onward: explicit fixed overhead plus a revenue-linked allowance. Includes ordinary compensation, D&A and a retained allowance for transaction/administrative costs; no blanket non-GAAP addback.",
+    "cash_flow": "Operating profit is before interest and taxes. D&A and ordinary SBC are included in expenses here. Their noncash/cash-replacement treatment must be reconciled once in the linked statements; no additional D&A expense subtraction.",
+    "transaction_scope": "Same standalone owned-business scope as revenue; no Iridium revenue, synergies or combined-company cost forecast."
+  },
+  "cases": {
+    "downside": {
+      "q3": {"gross_margin": 0.26, "rd": 94.0, "sga": 61.0},
+      "q4": {"gross_margin": 0.27, "rd": 100.0, "sga": 64.0},
+      "continuing_launch_margin": [0.35, 0.36, 0.37, 0.38],
+      "space_margin": [0.27, 0.28, 0.29, 0.30],
+      "neutron_contribution_margin": [0.00, 0.05, 0.10, 0.20],
+      "neutron_fixed_commercial_cost": [30.0, 40.0, 45.0, 50.0],
+      "rd": [385.0, 410.0, 425.0, 440.0],
+      "sga_fixed": [155.0, 163.0, 171.0, 180.0],
+      "sga_revenue_fraction": [0.09, 0.09, 0.09, 0.09],
+      "story": "Missed deliveries lower utilization and margin, while technical delays sustain R&D and readiness costs. Q3 deliberately misses both margin and expense guidance."
+    },
+    "base": {
+      "q3": {"gross_margin": 0.30, "rd": 85.0, "sga": 61.0},
+      "q4": {"gross_margin": 0.32, "rd": 88.0, "sga": 64.0},
+      "continuing_launch_margin": [0.43, 0.44, 0.45, 0.45],
+      "space_margin": [0.34, 0.35, 0.36, 0.37],
+      "neutron_contribution_margin": [0.20, 0.25, 0.30, 0.35],
+      "neutron_fixed_commercial_cost": [25.0, 30.0, 35.0, 40.0],
+      "rd": [350.0, 360.0, 375.0, 390.0],
+      "sga_fixed": [150.0, 157.5, 165.375, 173.64375],
+      "sga_revenue_fraction": [0.08, 0.08, 0.08, 0.08],
+      "story": "Q3 follows guidance midpoints, followed by modest Q4 margin recovery. Continuing-business efficiency improves gradually; Neutron initially loses money after commercial overhead; R&D and total SG&A rise in dollars."
+    },
+    "upside": {
+      "q3": {"gross_margin": 0.31, "rd": 87.0, "sga": 60.0},
+      "q4": {"gross_margin": 0.35, "rd": 92.0, "sga": 66.0},
+      "continuing_launch_margin": [0.45, 0.47, 0.49, 0.50],
+      "space_margin": [0.36, 0.38, 0.40, 0.42],
+      "neutron_contribution_margin": [0.25, 0.35, 0.40, 0.45],
+      "neutron_fixed_commercial_cost": [30.0, 40.0, 50.0, 60.0],
+      "rd": [370.0, 395.0, 420.0, 445.0],
+      "sga_fixed": [155.0, 166.0, 178.0, 191.0],
+      "sga_revenue_fraction": [0.075, 0.075, 0.075, 0.075],
+      "story": "Higher utilization and favorable mix support margins. More launches and products require higher dollar R&D, commercial overhead and SG&A; investment and funding still need separate modeling."
+    }
+  },
+  "driver_challenges": [
+    {"driver": "2026 quarterly gross margins", "values": "cases.*.q3/q4.gross_margin", "basis": "Base Q3 30% is management's 29-31% GAAP midpoint; Q4 32% is an analyst recovery assumption. Downside 26/27%; upside 31/35%.", "challenge": "Product mix, execution losses and purchase accounting can depress margins. H1 margin does not guarantee the next quarter.", "change_evidence": "Dated contract-cost estimates, delivery mix and updated GAAP guidance.", "source_ids": ["RELEASE26", "Q26"]},
+    {"driver": "2026 quarterly R&D and SG&A", "values": "cases.*.q3/q4.rd/sga", "basis": "Base Q3 85+61=146 matches the 143-149 GAAP operating-expense midpoint, with split informed by Q2 82.429 R&D and 59.661 SG&A. Q4 88+64=152 is an analyst estimate. Other splits are scenario judgments.", "challenge": "Management did not guide the R&D/SG&A split; integration and development costs can overshoot.", "change_evidence": "Staffing, engineering milestones, transaction-expense breakdown and updated expense guidance.", "source_ids": ["RELEASE26", "Q26"]},
+    {"driver": "continuing launch margin", "values": "cases.*.continuing_launch_margin, 2027-2030", "basis": "Base 43/44/45/45% is near H1 launch gross margin and assumes modest efficiency gains; downside 35-38% and upside 45-50% test utilization and mix.", "challenge": "HASTE recognition and mission mix can distort period margins; 50% is an optimistic analyst endpoint, not a validated unit-cost target.", "change_evidence": "Sustained like-for-like launch costs, mission mix and facility utilization.", "source_ids": ["Q26"]},
+    {"driver": "space margin", "values": "cases.*.space_margin, 2027-2030", "basis": "Base 34-37% surrounds and gradually improves on H1 segment gross margin. Downside 27-30%; upside 36-42% reflect integration, mix and execution.", "challenge": "Fixed-price contract revisions or acquired-business costs can outweigh scale economies.", "change_evidence": "Program cost-to-complete updates, repeatable component margins and acquisition integration results.", "source_ids": ["Q26"]},
+    {"driver": "Neutron contribution margin and fixed commercial costs", "values": "cases.*.neutron_contribution_margin and neutron_fixed_commercial_cost, 2027-2030", "basis": "Analyst split: base contribution 20/25/30/35% less 25/30/35/40 million fixed costs. Models negative initial gross profit and costs without revenue. No company program-cost disclosure supports these precise amounts.", "challenge": "Weakly evidenced allocation; costs may overlap existing production costs or R&D, and technical performance/reuse can miss expectations.", "change_evidence": "Separate commercial-production cost schedule, achieved cadence and reuse economics. Test fixed-cost removal for overlap and cost escalation for execution risk.", "source_ids": []},
+    {"driver": "total-company R&D", "values": "cases.*.rd, 2027-2030", "basis": "Base 350/360/375/390 million grows from the new 2026 estimate, instead of carrying Lab 10's 290-330 path unchanged. Downside retains 385-440 despite weak sales; upside funds expansion at 370-445.", "challenge": "Milestone delays can extend spending; spending less could also reduce future products. No causal return-on-R&D is proven.", "change_evidence": "Engineering staffing, qualified hardware, product readiness and disclosed grant funding. Model revenue consequences alongside discretionary cuts.", "source_ids": ["Q26"]},
+    {"driver": "SG&A fixed overhead and revenue-linked allowance", "values": "cases.*.sga_fixed and sga_revenue_fraction, 2027-2030", "basis": "Base fixed 150 million grows 5% yearly plus 8% of revenue. This roughly continues 2026 dollar expense and allows operating leverage. Downside uses 9%; upside 7.5%, with different fixed growth paths.", "challenge": "This is a modeling decomposition, not a disclosed fixed/variable split. Legal, insurance, integration and compliance expenses may be sticky or rise faster.", "change_evidence": "Headcount, overhead budgets, transaction-cost detail and demonstrated expense scaling; avoid assuming proportional cost cuts in a revenue miss.", "source_ids": ["Q26"]}
+  ]
+}
