@@ -1,0 +1,74 @@
+
+INCOME STATEMENT (USD millions, except shares)
+Line                                2026         2027         2028         2029         2030
+Revenue                          842.519    1,137.400    1,478.620    1,848.275    2,217.930
+Cost Of Sales                    547.637      705.188      887.172    1,072.000    1,264.220
+Gross Profit                     294.882      432.212      591.448      776.276      953.710
+Sga                              193.779      238.854      280.938      314.207      354.869
+Rd                               290.000      300.000      310.000      320.000      330.000
+Operating Income                -188.898     -106.642        0.510      142.069      268.841
+Interest                           0.103        0.000        0.000        0.000        0.000
+Pretax                          -189.001     -106.642        0.510      142.069      268.841
+Tax                                0.000        0.000        0.128       35.517       67.210
+Net Income                      -189.001     -106.642        0.383      106.552      201.631
+
+BALANCE SHEET (USD millions, except shares)
+Line                                2026         2027         2028         2029         2030
+Cash                             788.151      565.449      448.516      439.256      523.212
+Securities                         0.000        0.000        0.000        0.000        0.000
+Receivables                       54.601       73.712       95.825      119.782      143.738
+Contract Assets                   86.248      116.435      151.366      189.207      227.049
+Inventory                        219.832      283.076      356.127      430.321      507.481
+Prepaids                         125.934      170.011      221.015      276.268      331.522
+Ppe                              437.876      550.862      659.137      763.313      863.926
+Intangibles                      195.016      166.261      138.543      113.031       91.341
+Other Assets                     332.468      332.468      332.468      332.468      332.468
+Assets                         2,240.127    2,258.274    2,402.997    2,663.646    3,020.737
+Payables                         100.889      129.914      163.440      197.490      232.903
+Contract Liabilities             273.613      369.378      480.191      600.239      720.287
+Notes                              0.000        0.000        0.000        0.000        0.000
+Other Debt                         0.000        0.000        0.000        0.000        0.000
+Other Liabilities                180.376      180.376      180.376      180.376      180.376
+Equity                         1,685.248    1,578.606    1,578.989    1,685.541    1,887.171
+Liabilities Equity             2,240.127    2,258.274    2,402.997    2,663.646    3,020.737
+Shares                           619.894      619.894      619.894      619.894      619.894
+
+CASH FLOW (USD millions, except shares)
+Line                                2026         2027         2028         2029         2030
+Net income                      -189.001     -106.642        0.383      106.552      201.631
++ Depreciation                    41.597       57.014       71.725       85.823       99.388
++ Amortization                    29.730       28.755       27.718       25.512       21.690
+- Change in net WC                31.283       31.829       36.760       37.147       38.753
+Operating cash flow             -148.957      -52.702       63.066      180.740      283.956
+- Capex                          160.000      170.000      180.000      190.000      200.000
+- Debt repayment                   1.716        0.000        0.000        0.000        0.000
+FCFE (signed)                   -310.673     -222.702     -116.934       -9.260       83.956
++ Securities sold                270.164        0.000        0.000        0.000        0.000
+Opening cash                     828.660      788.151      565.449      448.516      439.256
+Ending cash                      788.151      565.449      448.516      439.256      523.212
+Noncash debt conversion          152.395        0.000        0.000        0.000        0.000
+
+CHECKS: no revolver and no new cash equity financing assumed.
+FY2026: gap 0.000; cash >= 100; roll-forwards PASS; NEGATIVE FCFE
+FY2027: gap 0.000; cash >= 100; roll-forwards PASS; NEGATIVE FCFE
+FY2028: gap 0.000; cash >= 100; roll-forwards PASS; NEGATIVE FCFE
+FY2029: gap 0.000; cash >= 100; roll-forwards PASS; NEGATIVE FCFE
+FY2030: gap 0.000; cash >= 100; roll-forwards PASS; positive FCFE
+
+Lab positive-FCFE convention: $1.23 per share
+PV of positive FCFE: $41.741 million
+PV of negative FCFE (excluded ONLY in lab convention): $-520.725 million
+Sustainable FY2031 FCFE: $174.064 million
+PV of terminal value: $721.171 million
+Terminal share of lab value: 94.53%
+Funding-adjusted signed-FCFE + initial excess liquidity: $2.00 per share
+Scenario common-equivalent shares: 619.894349 million
+Market quote: $74.63; September 24, 2026, 1:46 PM EDT (intraday).
+
+SAME-SHARE-BASIS COMPARISON (denominator adjustment only)
+June 30 disclosed shares, with remaining notes converted: 641.739433 million
+Baseline lab value on this basis: $1.19 per share
+Baseline funding-adjusted value on this basis: $1.93 per share
+Market-equivalent total on the SAME basis: $47893.014 million
+Not actual basic market capitalization; not a fully diluted option valuation.
+The annual baseline is not a fully updated September 2026 valuation; see notes.
