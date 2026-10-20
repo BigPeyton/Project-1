@@ -1,0 +1,25 @@
+My recommendation is to keep Rocket Lab on watch and defer initiating a position at the September 10 valuation-date price of sixty-one dollars and ninety-six cents.
+
+This application shows how operating assumptions affect the financial forecast and valuation. The base scenario produces approximately two dollars and ninety-nine cents per share.
+
+Increasing research and development spending by ten percent reduces 2030 operating profit by thirty-nine million dollars. Free cash flow also falls, and modeled value decreases to approximately two dollars and seventy-four cents per share.
+
+Reset restores the original assumptions. This deliberate invalid-input test makes terminal growth equal to the discount rate. The application rejects that scenario instead of displaying a misleading valuation.
+
+The investment question is whether a fund with no existing Rocket Lab position should commit capital today, using the information available at the valuation cutoff.
+
+Rocket Lab’s launch services, space systems, and backlog provide reasons to investigate the company. However, growth requires development spending, capacity investment, and working capital before it generates cash for investors.
+
+My working standalone scenario range is approximately one to seven dollars per share. That combines a conditional orderly-exit downside, a base continuation case, and an upside case. It is not a guaranteed floor or a range covering every possible outcome.
+
+The base forecast does not generate positive free cash flow until 2034. The continuing downside also requires approximately three hundred fifteen million dollars of additional funding in 2030. The model rejects that unfunded path rather than silently assuming new financing will appear.
+
+These results explain why I am deferring an investment. The specified operating scenarios do not support the valuation-date market price.
+
+There are also important limits to that conclusion. The model excludes the pending Iridium transaction’s operations, purchase consideration, and financing together. It therefore does not establish the value of the complete combined business.
+
+Long-term margins, capital returns, security claims, and financing availability remain uncertain. The gap between my standalone valuation and the market price does not, by itself, prove the market is wrong.
+
+I would reconsider initiation after incorporating the full transaction economics, supporting the operating assumptions with stronger evidence, and verifying that an adverse scenario can be funded. The resulting valuation would also need to justify the purchase price under the committee’s risk limits and margin of safety.
+
+My committee request is to retain Rocket Lab on watch, commit no capital at this stage, and monitor operating execution, cash needs, and committed financing. AI assisted the analysis and development; that assistance is disclosed, and I reviewed and adopted this recommendation.

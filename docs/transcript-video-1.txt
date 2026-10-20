@@ -1,0 +1,23 @@
+My Project 1 analyzes Rocket Lab. My original position in Edition A was to initiate research, because I saw potential in the space industry and Rocket Lab’s launch services, space systems, and contracted backlog. That was a reason to investigate the company, rather than a completed buy recommendation.
+
+The main unanswered question was whether that growth could become sustained profitability and positive cash flow.
+
+In Edition B, the decision became more specific: should a buy-side fund with no existing Rocket Lab position initiate an investment?
+
+My recommendation is watch or defer at the September 10 valuation-date price of sixty-one dollars and ninety-six cents.
+
+The biggest change was moving from a qualitative growth story to a linked financial forecast. The model connects revenue and operating costs to the financial statements, free cash flow, and valuation. That makes the consequences of research spending, reinvestment, and financing needs visible.
+
+For example, the base forecast does not produce positive free cash flow until 2034. The continuing downside also encounters a funding gap. Those are conditional model results, but they show why revenue growth alone is insufficient to support an investment.
+
+This change came from course requirements, source reconciliation, and AI-assisted modeling and testing. I reviewed and adopted the final recommendation.
+
+One AI-produced claim we checked concerned a noncash cancellation expense. The claim was that removing this expense could improve the analytical earnings view without increasing historical cash flow.
+
+The project compared that claim with Rocket Lab’s June 2026 filing and cash-flow statement. Removing both the expense and its corresponding noncash addback leaves operating cash flow unchanged.
+
+The claim was accepted with qualification: the adjustment does not create cash, and it does not establish permanent future savings.
+
+My conclusion is that Rocket Lab’s growth opportunity deserves continued research, but the modeled cash-flow and funding risks support watch or defer.
+
+AI assisted the research and code, including the original Edition A’s preparation. That history is disclosed. The original is preserved, with corrections presented separately.

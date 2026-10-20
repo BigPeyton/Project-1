@@ -1,0 +1,29 @@
+This is the code behind my Rocket Lab financial-model application. Its purpose is to connect operating assumptions to financial statements, valuation, and an investment decision.
+
+The data folder contains reported financial inputs and explicit assumptions. The source folder contains the calculations and application. Tests check the calculations and failure conditions, while outputs contains saved results that a reviewer can inspect without running the code.
+
+The first major component is the linked three-statement model. Revenue and cost assumptions feed the income statement, while working capital, capital spending, and financing affect the balance sheet and cash-flow statement.
+
+This check-period function verifies that the balance sheet balances, cash and equity roll forward correctly, and operating results reconcile.
+
+The model also calculates free cash flow to the firm. This accounts for operating taxes, depreciation, working-capital investment, and capital expenditures. It keeps cash flow available to the business separate from cash flow available only to shareholders.
+
+The valuation module discounts future operating cash flows and terminal value. The five-year forecast is followed by an explicit transition toward mature operating assumptions.
+
+This terminal-value function includes reinvestment needed to support growth. It also rejects inconsistent assumptions, including terminal growth at or above the discount rate.
+
+The discounting function only accepts cash flows after the valuation cutoff. This prevents cash flow from before the valuation date from being counted again.
+
+The equity bridge converts operating value into value attributable to shareholders. It accounts for cash, financial claims, and the participating share count.
+
+One important safeguard concerns convertible notes. The model distinguishes conversion into shares from retaining a debt claim. It rejects a scenario that includes both conversion shares and the retained note claim, which would double-count the same instrument.
+
+The audit from my cold run reports 105 passing tests and successful reproduction of six saved reports. These checks support calculation consistency. They do not prove that the forecast assumptions will happen.
+
+This is the highest-risk failure demonstration. The continuing downside requires approximately 314.688 million dollars of additional funding in 2030.
+
+The model stops instead of assuming an uncommitted financing source exists. This is an intentional rejection. Without credible funding, the investment case becomes less defensible.
+
+A reviewer can reproduce the project by creating a Python environment, running the validation script, and launching the application using these README instructions. The project uses Python's standard library.
+
+AI assisted development, and that assistance is disclosed. The major remaining analytical limitations include uncertain long-term margins, financing availability, and transaction assumptions. Passing software tests does not eliminate those financial risks.
