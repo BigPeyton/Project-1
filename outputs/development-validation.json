@@ -1,0 +1,104 @@
+{
+  "run_started_utc": "2026-10-19T22:01:45.478415+00:00",
+  "elapsed_seconds": 1.364278,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "classification": "AI-assisted development audit; NOT a recorded fresh-environment cold run or human AI-off exercise.",
+  "source_fingerprint_sha256": "fa90591f1c57c972fd0253ab8546d0cee7f7d247dd7f75408e2dfcae75f087c9",
+  "file_hashes": {
+    "data/capitalization.json": "6adac3cef8396dece3124b0dcb7a9dd9fa782f51888353804f3f0881bcaccc07",
+    "data/cash_bridge_assumptions.json": "245dc42429e2fb3a08357da792568008a31f1ac98ecf6ca7f8866bf3d0874bb5",
+    "data/claims.json": "546c7a969837f9a56822106a4815646862b09d6d6c36bc96db9bc00137d8b259",
+    "data/downside_exit_assumptions.json": "db5d6d1af1db5d808345876b221aa376891e26b736839dc2507effd42bb2fcbc",
+    "data/equity_bridge_assumptions.json": "6382c1a37bfedd444841b15764418d7f3029c41f5b97bd861a34d3b10522ad1c",
+    "data/normalization.json": "58a14bf1e5e9ea15169f0cc06f6e6eafe7772cc54c0efb90d3d00bf08caab9bc",
+    "data/operating_assumptions.json": "78ef72681bf172241df23594df7b5fb8005db8899437535cf3bb0585148f3502",
+    "data/peer_inputs.json": "92025f35b91372fa0289c344aa0b81aac16c1068da63ae481360597448ebd937",
+    "data/proforma_sensitivity_assumptions.json": "82a2a3641113229a15fe6bf118f8f244ea0581208c889c4bd2ec2ea5d9eaa9f7",
+    "data/reported_financials.json": "2e5eddaaad44e3e7b804a9091b364410bfa82d9757c8eff2c1308ce731ea3498",
+    "data/revenue_assumptions.json": "12a10a1aed8a2e06872f9ed140d260751d68fd544fdf83c4a2228caf13ba65c0",
+    "data/reverse_dcf_assumptions.json": "46fdd035e6eda1433dc0edd623b5db19146f2cead308a5d5fe3bf50c7f68affb",
+    "data/statement_assumptions.json": "4241779aa96fe5a70c5961239ce58209f1027645f7bd6e7a18ca66a0855b96af",
+    "data/valuation_assumptions.json": "a7e58d6a948760a7b8606f46250d72fac7d8cebbd9d299694159a8718d3d4e5c",
+    "src/app.py": "f07c96b1105eee9cb4b464da5d6fa84da2c70d1cdb15c6a0cb002a84ee9d6249",
+    "src/audit_reported_inputs.py": "90421e7cb8c9dbd161b09758205419c4aefea1d5adcc43cd048d301b7c3510b4",
+    "src/cash_bridge.py": "364967dea0973e7db6e9850944d5c9d0d04a40c2486a8fe37a5a07036741050f",
+    "src/claims_bridge.py": "69e90a58ab7e7e9c062a3182b07def23b1340712e09606f14f5d1e2447efb0c5",
+    "src/comparables.py": "016972a5d20f77c978f2e373c1a3a3f84f72b88bae9ba8ceabc9ec6890e2fa89",
+    "src/downside_exit.py": "134c0be6535547960121c0be799995cf2938d9689788be4f67dd7a09e4016794",
+    "src/equity_bridge.py": "8a0eab46b3a8e56baf558fafddb537800ff31f8cc50546af50323c737783bd0f",
+    "src/normalize_history.py": "6ac0f0d09a9dabb934cc100a06e417c586e3371fd33b5acd7a6a3a580181de03",
+    "src/operating_forecast.py": "dae11f10303c5beb2c6cc8a1c20a45efa1b921833371bad6e5c5742617e49b3e",
+    "src/proforma_sensitivity.py": "99dfb4df5d926f27a571d675b2c91390246504df3f7a1f15e8b822bf709ad233",
+    "src/revenue_forecast.py": "5a4276fd67d9f8313fab487812c1043cc33bb40c63ae63315021feb45c27e6fd",
+    "src/reverse_dcf.py": "27fbe7b7287cd318f523e9895916772d4d7baa89f022cd7fd67ccf266bb3b4e1",
+    "src/three_statements.py": "99eb1fb9d86293f7569788f00f63fffc7bc9358a61dfe691e7d6b95712f42d87",
+    "src/validate_project.py": "c234cd0286ef66881668e11db24bc16de840a10e9a922766370a8268c81fd8b0",
+    "src/valuation.py": "a61c69d722353dde0714d093962a98a05edc466348ceac9716b4d53c74d449f1",
+    "tests/test_app.py": "e83372067344f33066effab84c859d32dd6186a1751dd062cb6dfc7e81b117af",
+    "tests/test_cash_bridge.py": "6874c2d653a8046d6127aca08696da8dcad98608b70199a5d7f57c22412eb438",
+    "tests/test_claims_bridge.py": "d0cabe07bcd23dad9c3d51bf213ba405deecb98c6aa0a42735ab34f7f4d98604",
+    "tests/test_downside_and_comparables.py": "048f50bc97eb3b65c77712e4d74b4b39ec744d90426dba15b26ac54b89e5a51d",
+    "tests/test_equity_bridge.py": "e4807451af644ffd337cb25a90690902212a234b9f085067e07b41586062cddf",
+    "tests/test_normalization.py": "7095364e604429ed9cc8dfe1b1ba62c0ec901f1e75ae92352edbc72d79576755",
+    "tests/test_operating_forecast.py": "e867b22792ec82723467fcc0f747a0f3aaa3db786fffde0304af91d52484c59c",
+    "tests/test_proforma_sensitivity.py": "141d41d8a9ef6f11de2533d3faa40db25ff7e0205521a1050a1df6445534ef5e",
+    "tests/test_revenue_forecast.py": "59d6eecc386e097f7c58b19972935b85f126b4763cfdb5027702edbe2b602c04",
+    "tests/test_reverse_dcf.py": "820a20e2cd9ae3602e672ed4cd9610d8e52d3f1071e9d76d00dd58c8fe409811",
+    "tests/test_three_statements.py": "26cfb70eec69e8d946c49d6e45b507cf900b39053ec87a7226f539d48c0d27b8",
+    "tests/test_valuation.py": "4c4b8e930ed77d3d2d1ed47c68ee51a626658940b31b85e008bbcdd2e9a94951"
+  },
+  "tests_run": 105,
+  "tests_successful": true,
+  "test_log": "test_boundary_failure_then_recovery (test_app.ApplicationTests.test_boundary_failure_then_recovery) ... ok\ntest_change_then_reset_no_file_mutation (test_app.ApplicationTests.test_change_then_reset_no_file_mutation) ... ok\ntest_downside_funding_not_hidden (test_app.ApplicationTests.test_downside_funding_not_hidden) ... ok\ntest_export_uses_same_inputs_and_escapes_reflected_text (test_app.ApplicationTests.test_export_uses_same_inputs_and_escapes_reflected_text) ... ok\ntest_invalid_and_duplicate_parameters (test_app.ApplicationTests.test_invalid_and_duplicate_parameters) ... ok\ntest_only_allowlisted_evidence_is_served (test_app.ApplicationTests.test_only_allowlisted_evidence_is_served) ... ok\ntest_page_exposes_statement_and_scope_evidence (test_app.ApplicationTests.test_page_exposes_statement_and_scope_evidence) ... ok\ntest_reference_matches_saved_financial_engine (test_app.ApplicationTests.test_reference_matches_saved_financial_engine) ... ok\ntest_live_export_and_headers (test_app.LiveHTTPTests.test_live_export_and_headers) ... ok\ntest_live_failure_then_success (test_app.LiveHTTPTests.test_live_failure_then_success) ... ok\ntest_financing_pairs_shares_with_net_proceeds (test_cash_bridge.CashBridgeTests.test_financing_pairs_shares_with_net_proceeds) ... ok\ntest_invalid_inputs_fail_loudly (test_cash_bridge.CashBridgeTests.test_invalid_inputs_fail_loudly) ... ok\ntest_no_burn_cash_excludes_restricted_and_unused_funding (test_cash_bridge.CashBridgeTests.test_no_burn_cash_excludes_restricted_and_unused_funding) ... ok\ntest_option_proceeds_not_counted_twice (test_cash_bridge.CashBridgeTests.test_option_proceeds_not_counted_twice) ... ok\ntest_portfolio_transfer_preserves_liquidity (test_cash_bridge.CashBridgeTests.test_portfolio_transfer_preserves_liquidity) ... ok\ntest_stress_lowers_available_liquidity (test_cash_bridge.CashBridgeTests.test_stress_lowers_available_liquidity) ... ok\ntest_claims_do_not_subtract_undrawn_commitment_or_operating_leases (test_claims_bridge.ClaimsTests.test_claims_do_not_subtract_undrawn_commitment_or_operating_leases) ... ok\ntest_conversion_exchanges_claim_for_shares (test_claims_bridge.ClaimsTests.test_conversion_exchanges_claim_for_shares) ... ok\ntest_earnout_rollforward_rejects_missing_addition (test_claims_bridge.ClaimsTests.test_earnout_rollforward_rejects_missing_addition) ... ok\ntest_lease_principal_payment_reduces_cash_and_claim_equally (test_claims_bridge.ClaimsTests.test_lease_principal_payment_reduces_cash_and_claim_equally) ... ok\ntest_currency_scale_invariance (test_downside_and_comparables.ComparableTests.test_currency_scale_invariance) ... ok\ntest_duplicates_bad_denominator_and_treasury_shares (test_downside_and_comparables.ComparableTests.test_duplicates_bad_denominator_and_treasury_shares) ... ok\ntest_equity_and_ev_definitions_reconcile (test_downside_and_comparables.ComparableTests.test_equity_and_ev_definitions_reconcile) ... ok\ntest_leave_one_out_does_not_invent_a_range (test_downside_and_comparables.ComparableTests.test_leave_one_out_does_not_invent_a_range) ... ok\ntest_less_excess_peer_cash_increases_ev_not_ps (test_downside_and_comparables.ComparableTests.test_less_excess_peer_cash_increases_ev_not_ps) ... ok\ntest_no_future_same_day_unknown_or_currency_mismatch (test_downside_and_comparables.ComparableTests.test_no_future_same_day_unknown_or_currency_mismatch) ... ok\ntest_ps_does_not_receive_a_second_cash_bridge (test_downside_and_comparables.ComparableTests.test_ps_does_not_receive_a_second_cash_bridge) ... ok\ntest_insolvent_exit_fails_loudly (test_downside_and_comparables.DownsideTests.test_insolvent_exit_fails_loudly) ... ok\ntest_no_cash_double_recovery (test_downside_and_comparables.DownsideTests.test_no_cash_double_recovery) ... ok\ntest_no_claim_double_settlement (test_downside_and_comparables.DownsideTests.test_no_claim_double_settlement) ... ok\ntest_recovery_and_closure_cost_direction (test_downside_and_comparables.DownsideTests.test_recovery_and_closure_cost_direction) ... ok\ntest_reserve_release_and_option_warning (test_downside_and_comparables.DownsideTests.test_reserve_release_and_option_warning) ... ok\ntest_stop_before_failure_without_new_funding (test_downside_and_comparables.DownsideTests.test_stop_before_failure_without_new_funding) ... ok\ntest_truncation_preserves_prior_cashflows (test_downside_and_comparables.DownsideTests.test_truncation_preserves_prior_cashflows) ... ok\ntest_bad_amounts_fail (test_equity_bridge.EquityBridgeTests.test_bad_amounts_fail) ... ok\ntest_cash_change_has_dollar_for_dollar_effect (test_equity_bridge.EquityBridgeTests.test_cash_change_has_dollar_for_dollar_effect) ... ok\ntest_claim_reconciliation_and_input_preservation (test_equity_bridge.EquityBridgeTests.test_claim_reconciliation_and_input_preservation) ... ok\ntest_customer_recovery_and_reserve_direction (test_equity_bridge.EquityBridgeTests.test_customer_recovery_and_reserve_direction) ... ok\ntest_fair_price_issuance_neutral_before_fees (test_equity_bridge.EquityBridgeTests.test_fair_price_issuance_neutral_before_fees) ... ok\ntest_financing_must_pair_cash_and_shares (test_equity_bridge.EquityBridgeTests.test_financing_must_pair_cash_and_shares) ... ok\ntest_future_cash_is_discounted_but_shares_are_not (test_equity_bridge.EquityBridgeTests.test_future_cash_is_discounted_but_shares_are_not) ... ok\ntest_integrated_numerator_and_share_count (test_equity_bridge.EquityBridgeTests.test_integrated_numerator_and_share_count) ... ok\ntest_intrinsic_note_and_option_election (test_equity_bridge.EquityBridgeTests.test_intrinsic_note_and_option_election) ... ok\ntest_known_option_cash_not_added_twice (test_equity_bridge.EquityBridgeTests.test_known_option_cash_not_added_twice) ... ok\ntest_limited_liability_displays_shortfall (test_equity_bridge.EquityBridgeTests.test_limited_liability_displays_shortfall) ... ok\ntest_mismatch_and_conditional_funding_rejected (test_equity_bridge.EquityBridgeTests.test_mismatch_and_conditional_funding_rejected) ... ok\ntest_note_claim_and_conversion_exclusive (test_equity_bridge.EquityBridgeTests.test_note_claim_and_conversion_exclusive) ... ok\ntest_payment_before_cutoff_removes_cash_and_claim_once (test_equity_bridge.EquityBridgeTests.test_payment_before_cutoff_removes_cash_and_claim_once) ... ok\ntest_duplicate_and_post_cutoff_evidence_rejected (test_normalization.NormalizationTests.test_duplicate_and_post_cutoff_evidence_rejected) ... ok\ntest_noncash_removal_cannot_create_cash (test_normalization.NormalizationTests.test_noncash_removal_cannot_create_cash) ... ok\ntest_reconciliation_and_reported_data_preserved (test_normalization.NormalizationTests.test_reconciliation_and_reported_data_preserved) ... ok\ntest_wrong_da_scope_fails (test_normalization.NormalizationTests.test_wrong_da_scope_fails) ... ok\ntest_bad_units_values_and_cutoff_fail (test_operating_forecast.OperatingTests.test_bad_units_values_and_cutoff_fail) ... ok\ntest_guidance_is_an_anchor_not_a_constraint_on_downside (test_operating_forecast.OperatingTests.test_guidance_is_an_anchor_not_a_constraint_on_downside) ... ok\ntest_margin_change_flows_to_gross_profit_and_ebit_once (test_operating_forecast.OperatingTests.test_margin_change_flows_to_gross_profit_and_ebit_once) ... ok\ntest_rd_increase_reduces_ebit_dollar_for_dollar (test_operating_forecast.OperatingTests.test_rd_increase_reduces_ebit_dollar_for_dollar) ... ok\ntest_reported_history_and_normalized_view_stay_separate (test_operating_forecast.OperatingTests.test_reported_history_and_normalized_view_stay_separate) ... ok\ntest_zero_neutron_does_not_erase_readiness_or_rd (test_operating_forecast.OperatingTests.test_zero_neutron_does_not_erase_readiness_or_rd) ... ok\ntest_app_operating_change_flows_through_all_statements_and_reset (test_proforma_sensitivity.OperatingSensitivityTests.test_app_operating_change_flows_through_all_statements_and_reset) ... ok\ntest_bounds_fail_loudly (test_proforma_sensitivity.OperatingSensitivityTests.test_bounds_fail_loudly) ... ok\ntest_defaults_preserve_model_and_source (test_proforma_sensitivity.OperatingSensitivityTests.test_defaults_preserve_model_and_source) ... ok\ntest_growth_change_compounds_four_years_only (test_proforma_sensitivity.OperatingSensitivityTests.test_growth_change_compounds_four_years_only) ... ok\ntest_neutron_scale_preserves_fixed_costs (test_proforma_sensitivity.OperatingSensitivityTests.test_neutron_scale_preserves_fixed_costs) ... ok\ntest_rankings_use_actual_endpoint_spans_and_alternative_ranges (test_proforma_sensitivity.OperatingSensitivityTests.test_rankings_use_actual_endpoint_spans_and_alternative_ranges) ... ok\ntest_rd_change_known_ebit_effect_and_no_historical_change (test_proforma_sensitivity.OperatingSensitivityTests.test_rd_change_known_ebit_effect_and_no_historical_change) ... ok\ntest_bad_path_and_hindsight_fail (test_revenue_forecast.RevenueTests.test_bad_path_and_hindsight_fail) ... ok\ntest_bad_segment_allocation_and_history_fail (test_revenue_forecast.RevenueTests.test_bad_segment_allocation_and_history_fail) ... ok\ntest_historical_plus_forecast_once (test_revenue_forecast.RevenueTests.test_historical_plus_forecast_once) ... ok\ntest_neutron_delay_removes_only_incremental_revenue (test_revenue_forecast.RevenueTests.test_neutron_delay_removes_only_incremental_revenue) ... ok\ntest_scenarios_are_ordered_but_not_probabilities (test_revenue_forecast.RevenueTests.test_scenarios_are_ordered_but_not_probabilities) ... ok\ntest_existing_forecast_round_trip_and_unchanged (test_reverse_dcf.ReverseTests.test_existing_forecast_round_trip_and_unchanged) ... ok\ntest_integrated_price_reproduction_and_rate_comparison (test_reverse_dcf.ReverseTests.test_integrated_price_reproduction_and_rate_comparison) ... ok\ntest_invalid_bounds_and_outputs (test_reverse_dcf.ReverseTests.test_invalid_bounds_and_outputs) ... ok\ntest_known_linear_roots_both_directions (test_reverse_dcf.ReverseTests.test_known_linear_roots_both_directions) ... ok\ntest_terminal_algebra_known_answer (test_reverse_dcf.ReverseTests.test_terminal_algebra_known_answer) ... ok\ntest_terminal_rejects_invalid_economics (test_reverse_dcf.ReverseTests.test_terminal_rejects_invalid_economics) ... ok\ntest_unbracketed_does_not_extrapolate (test_reverse_dcf.ReverseTests.test_unbracketed_does_not_extrapolate) ... ok\ntest_visible_report_preserves_rate_distinction (test_reverse_dcf.ReverseTests.test_visible_report_preserves_rate_distinction) ... ok\ntest_all_scenarios_balance_when_funding_is_explicit (test_three_statements.StatementTests.test_all_scenarios_balance_when_funding_is_explicit) ... ok\ntest_bad_paths_and_financing_inputs_fail (test_three_statements.StatementTests.test_bad_paths_and_financing_inputs_fail) ... ok\ntest_claim_settlement_is_not_a_second_fcff_deduction (test_three_statements.StatementTests.test_claim_settlement_is_not_a_second_fcff_deduction) ... ok\ntest_customer_advance_reduction_consumes_cash (test_three_statements.StatementTests.test_customer_advance_reduction_consumes_cash) ... ok\ntest_cutoff_claims_exclude_items_already_in_fcff (test_three_statements.StatementTests.test_cutoff_claims_exclude_items_already_in_fcff) ... ok\ntest_cutoff_partitions_future_flows_and_option_receipt (test_three_statements.StatementTests.test_cutoff_partitions_future_flows_and_option_receipt) ... ok\ntest_deliberate_cash_and_equity_corruption_fail (test_three_statements.StatementTests.test_deliberate_cash_and_equity_corruption_fail) ... ok\ntest_funding_failure_and_conditional_dilution_are_visible (test_three_statements.StatementTests.test_funding_failure_and_conditional_dilution_are_visible) ... ok\ntest_negative_fcff_preserved_even_when_accounting_profit_positive (test_three_statements.StatementTests.test_negative_fcff_preserved_even_when_accounting_profit_positive) ... ok\ntest_opening_reclassification_preserves_filing_and_inputs (test_three_statements.StatementTests.test_opening_reclassification_preserves_filing_and_inputs) ... ok\ntest_unpaid_capex_does_not_create_a_second_asset (test_three_statements.StatementTests.test_unpaid_capex_does_not_create_a_second_asset) ... ok\ntest_capital_overrun_reduces_value (test_valuation.ValuationTests.test_capital_overrun_reduces_value) ... ok\ntest_downside_funding_cannot_be_bypassed (test_valuation.ValuationTests.test_downside_funding_cannot_be_bypassed) ... ok\ntest_growth_direction_depends_on_economic_returns (test_valuation.ValuationTests.test_growth_direction_depends_on_economic_returns) ... ok\ntest_invalid_cashflow_dates_fail (test_valuation.ValuationTests.test_invalid_cashflow_dates_fail) ... ok\ntest_margin_shortfall_reduces_value (test_valuation.ValuationTests.test_margin_shortfall_reduces_value) ... ok\ntest_mixed_scenarios_fail (test_valuation.ValuationTests.test_mixed_scenarios_fail) ... ok\ntest_negative_2030_is_preserved_and_base_not_floored (test_valuation.ValuationTests.test_negative_2030_is_preserved_and_base_not_floored) ... ok\ntest_no_pre_cutoff_flows_or_duplicate_years (test_valuation.ValuationTests.test_no_pre_cutoff_flows_or_duplicate_years) ... ok\ntest_no_silent_input_mutation (test_valuation.ValuationTests.test_no_silent_input_mutation) ... ok\ntest_nonfinite_terminal_values_and_dates_fail (test_valuation.ValuationTests.test_nonfinite_terminal_values_and_dates_fail) ... ok\ntest_official_lab05_known_answer (test_valuation.ValuationTests.test_official_lab05_known_answer) ... ok\ntest_terminal_boundary_nonfinite_and_negative_profit_fail (test_valuation.ValuationTests.test_terminal_boundary_nonfinite_and_negative_profit_fail) ... ok\ntest_terminal_continuity_and_paid_growth (test_valuation.ValuationTests.test_terminal_continuity_and_paid_growth) ... ok\ntest_wacc_direction_on_selected_domain (test_valuation.ValuationTests.test_wacc_direction_on_selected_domain) ... ok\ntest_wacc_market_weight_and_old_erp_comparison (test_valuation.ValuationTests.test_wacc_market_weight_and_old_erp_comparison) ... ok\ntest_wacc_override_controls_all_validation (test_valuation.ValuationTests.test_wacc_override_controls_all_validation) ... ok\n\n----------------------------------------------------------------------\nRan 105 tests in 1.038s\n\nOK\n",
+  "failures": [],
+  "first_unexpected_failure_this_run": null,
+  "reproducibility": [
+    {
+      "check": "valuation-transition",
+      "status": "PASS",
+      "detail": "JSON and Markdown exactly reproduce."
+    },
+    {
+      "check": "equity-bridge",
+      "status": "PASS",
+      "detail": "JSON and Markdown exactly reproduce."
+    },
+    {
+      "check": "downside-exit",
+      "status": "PASS",
+      "detail": "JSON and Markdown exactly reproduce."
+    },
+    {
+      "check": "comparables",
+      "status": "PASS",
+      "detail": "JSON and Markdown exactly reproduce."
+    },
+    {
+      "check": "reverse-dcf",
+      "status": "PASS",
+      "detail": "JSON and Markdown exactly reproduce."
+    },
+    {
+      "check": "proforma-sensitivity",
+      "status": "PASS",
+      "detail": "JSON and Markdown exactly reproduce."
+    }
+  ],
+  "highest_risk_development_probe": {
+    "status": "PASS: expected funding failure observed",
+    "period": "2030",
+    "required_net_funding_m": 314.6877177016597,
+    "detail": "2030: additional external funding of 314.688 million required; no committed facility assumed.",
+    "decision_effect": "Continuing downside cannot be underwritten without committed funding; WATCH can become DO NOT INITIATE. Separate exit remains conditional."
+  },
+  "overall_pass": true,
+  "must_fix_before_submission": [
+    "Student AI-off locked prediction AND execution, with precommit evidence",
+    "Recorded README-only fresh-environment cold run with first failure and elapsed time",
+    "Final PDFs, three real videos and corrected timestamped transcripts",
+    "Manifest, source/access review, version freeze and submission receipt"
+  ]
+}

@@ -1,0 +1,58 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261019221547
+Username: PEYTONSLAPTOP\Peyto
+RunAs User: PEYTONSLAPTOP\Peyto
+Configuration Name: 
+Machine: PEYTONSLAPTOP (Microsoft Windows NT 10.0.26300.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 41152
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is ..\terminal-recording.txt
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> $coldStart = Get-Date
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> $coldStart.ToString("o")
+2026-10-19T22:15:53.2134427-04:00
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> [System.Environment]::OSVersion.VersionString
+Microsoft Windows NT 10.0.26300.0
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> python --version
+Python 3.13.15
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> python -m venv .venv
+
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> .\.venv\Scripts\python.exe -B src\validate_project.py --save
+Saved audit: 105 tests, overall pass True.
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> .\.venv\Scripts\python.exe -B src\app.py --port 8766
+Open http://127.0.0.1:8766 in your browser. Ctrl+C stops the app.
+127.0.0.1 - - [19/Oct/2026 22:16:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Oct/2026 22:16:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Oct/2026 22:17:26] "GET /?case=base&wacc=16.0&growth=3.0&margin=
+12.0&roic=16.0&space_growth=0.0&space_margin=0.0&rd_scale=110.0&neutron_scale=100.
+0 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Oct/2026 22:17:52] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Oct/2026 22:18:12] "GET /?case=base&wacc=3&growth=3 HTTP/1.1" 42
+2 -
+127.0.0.1 - - [19/Oct/2026 22:18:26] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Oct/2026 22:18:36] "GET /?case=downside HTTP/1.1" 422 -
+127.0.0.1 - - [19/Oct/2026 22:18:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Oct/2026 22:19:22] "GET /result.json?case=base&wacc=16.0&growth=
+3.0&margin=12.0&roic=16.0&space_growth=0.0&space_margin=0.0&rd_scale=100.0&neutron
+_scale=100.0 HTTP/1.1" 200 -
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> $coldEnd = Get-Date
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> $coldEnd.ToString("o")
+2026-10-19T22:19:59.3735656-04:00
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> ($coldEnd - $coldStart).TotalSeconds
+246.1601229
+PS C:\Users\Peyto\.codex\project1_cold_runs\20261019-220530\project> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261019222040
+**********************

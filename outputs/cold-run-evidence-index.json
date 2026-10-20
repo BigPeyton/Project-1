@@ -1,0 +1,38 @@
+{
+  "run": "20261019-220530",
+  "classification": "Student-executed run supported by terminal/audit/JSON evidence; video reported saved, not yet located or reviewed.",
+  "files": [
+    {
+      "source": "C:\\Users\\Peyto\\.codex\\project1_cold_runs\\20261019-220530\\terminal-recording.txt",
+      "preserved_copy": "outputs\\cold-run-terminal.txt",
+      "sha256": "21991487adcb0caeff167481b233d70c9ab4815efba4cbdc3de51b46b89ada19"
+    },
+    {
+      "source": "C:\\Users\\Peyto\\Downloads\\scenario-result (1).json",
+      "preserved_copy": "outputs\\cold-run-base-result.json",
+      "sha256": "38c18cb1e8f4032a87429ea1d89edcc3933f9968ae9076eae9ec0746e774db56"
+    },
+    {
+      "source": "C:\\Users\\Peyto\\.codex\\project1_cold_runs\\20261019-220530\\acquisition.json",
+      "preserved_copy": "outputs\\cold-run-acquisition.json",
+      "sha256": "1887630815c42c407cc37d559104dc52c74522433fcc533864b994e03ce5f183"
+    },
+    {
+      "source": "C:\\Users\\Peyto\\.codex\\project1_cold_runs\\20261019-220530\\source-hashes.json",
+      "preserved_copy": "outputs\\cold-run-source-hashes.json",
+      "sha256": "ba160908064aa53b3dd3cf2cc91ea8be9027c7fca41895ef95b4749b6289797e"
+    },
+    {
+      "source": "C:\\Users\\Peyto\\.codex\\project1_cold_runs\\20261019-220530\\project\\outputs\\development-validation.json",
+      "preserved_copy": "outputs\\cold-run-audit.json",
+      "sha256": "c74456addac97e73239bd440d6f997fafc29d931d31821fc460914c29dcefb52"
+    },
+    {
+      "source": "C:\\Users\\Peyto\\.codex\\project1_cold_runs\\20261019-220530\\project\\outputs\\development-validation.md",
+      "preserved_copy": "outputs\\cold-run-audit.md",
+      "sha256": "05579716617fbf1c52c20291d4df17451b5bca59229b5542a8154996172fd58c"
+    }
+  ],
+  "current_model_mismatches": [],
+  "transcript_status": "Videos 1-3 text files are recording-script drafts, not yet compared with the actual audio."
+}

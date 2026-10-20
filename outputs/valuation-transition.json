@@ -1,0 +1,785 @@
+{
+  "rate": {
+    "cost_of_equity": 0.156354,
+    "equity_market_proxy": 39788.164886360006,
+    "debt_market_proxy": 16.47869565217391,
+    "debt_weight": 0.0004139892778645725,
+    "calculated_wacc": 0.15631411047712063,
+    "selected_wacc": 0.16
+  },
+  "cases": {
+    "base": {
+      "case": "base",
+      "wacc": 0.16,
+      "growth": 0.03,
+      "transition": [
+        {
+          "year": 2031,
+          "end": "2031-12-31",
+          "revenue": 2816.5002020175793,
+          "growth": 0.18,
+          "ebit_margin": 0.052267882386513025,
+          "ebit": 147.21250130064502,
+          "cash_tax": 36.803125325161254,
+          "nopat": 110.40937597548375,
+          "sales_to_incremental_capital": 2.283575339450793,
+          "reinvestment": 197.33968244340605,
+          "fcff": -86.93030646792229,
+          "unlevered_liquidity_buffer": 1289.7632523212542,
+          "years_after_cutoff": 5.30958904109589
+        },
+        {
+          "year": 2032,
+          "end": "2032-12-31",
+          "revenue": 3267.140234340392,
+          "growth": 0.16,
+          "ebit_margin": 0.05979367323245602,
+          "ebit": 195.35431557675918,
+          "cash_tax": 48.838578894189794,
+          "nopat": 146.51573668256938,
+          "sales_to_incremental_capital": 2.2273756103760136,
+          "reinvestment": 205.35361466512563,
+          "fcff": -58.83787798255625,
+          "unlevered_liquidity_buffer": 1230.925374338698,
+          "years_after_cutoff": 6.3123287671232875
+        },
+        {
+          "year": 2033,
+          "end": "2033-12-31",
+          "revenue": 3724.5398671480475,
+          "growth": 0.14,
+          "ebit_margin": 0.06731946407839902,
+          "ebit": 250.73402779503803,
+          "cash_tax": 62.68350694875951,
+          "nopat": 188.05052084627852,
+          "sales_to_incremental_capital": 2.171175881301234,
+          "reinvestment": 205.85379006232407,
+          "fcff": -17.80326921604555,
+          "unlevered_liquidity_buffer": 1213.1221051226526,
+          "years_after_cutoff": 7.3123287671232875
+        },
+        {
+          "year": 2034,
+          "end": "2034-12-31",
+          "revenue": 4171.484651205814,
+          "growth": 0.12,
+          "ebit_margin": 0.07484525492434202,
+          "ebit": 312.2158321324791,
+          "cash_tax": 78.05395803311977,
+          "nopat": 234.1618740993593,
+          "sales_to_incremental_capital": 2.114976152226455,
+          "reinvestment": 197.23554077971298,
+          "fcff": 36.92633331964632,
+          "unlevered_liquidity_buffer": 1250.048438442299,
+          "years_after_cutoff": 8.312328767123288
+        },
+        {
+          "year": 2035,
+          "end": "2035-12-31",
+          "revenue": 4588.633116326396,
+          "growth": 0.1,
+          "ebit_margin": 0.082371045770285,
+          "ebit": 377.97050844796706,
+          "cash_tax": 94.49262711199177,
+          "nopat": 283.4778813359753,
+          "sales_to_incremental_capital": 2.0587764231516754,
+          "reinvestment": 178.3052521769952,
+          "fcff": 105.17262915898013,
+          "unlevered_liquidity_buffer": 1355.221067601279,
+          "years_after_cutoff": 9.312328767123288
+        },
+        {
+          "year": 2036,
+          "end": "2036-12-31",
+          "revenue": 4955.723765632508,
+          "growth": 0.08,
+          "ebit_margin": 0.089896836616228,
+          "ebit": 445.5038896742238,
+          "cash_tax": 111.37597241855595,
+          "nopat": 334.12791725566785,
+          "sales_to_incremental_capital": 2.002576694076896,
+          "reinvestment": 148.48041866132542,
+          "fcff": 185.64749859434244,
+          "unlevered_liquidity_buffer": 1540.8685661956215,
+          "years_after_cutoff": 10.315068493150685
+        },
+        {
+          "year": 2037,
+          "end": "2037-12-31",
+          "revenue": 5253.067191570459,
+          "growth": 0.06,
+          "ebit_margin": 0.09742262746217101,
+          "ebit": 511.7676080381217,
+          "cash_tax": 127.94190200953042,
+          "nopat": 383.8257060285913,
+          "sales_to_incremental_capital": 1.9463769650021163,
+          "reinvestment": 121.45027806595195,
+          "fcff": 262.3754279626394,
+          "unlevered_liquidity_buffer": 1803.2439941582609,
+          "years_after_cutoff": 11.315068493150685
+        },
+        {
+          "year": 2038,
+          "end": "2038-12-31",
+          "revenue": 5489.455215191129,
+          "growth": 0.045,
+          "ebit_margin": 0.10494841830811401,
+          "ebit": 576.1096422075367,
+          "cash_tax": 144.02741055188417,
+          "nopat": 432.08223165565255,
+          "sales_to_incremental_capital": 1.8901772359273368,
+          "reinvestment": 101.64704604403327,
+          "fcff": 330.43518561161926,
+          "unlevered_liquidity_buffer": 2133.67917976988,
+          "years_after_cutoff": 12.315068493150685
+        },
+        {
+          "year": 2039,
+          "end": "2039-12-31",
+          "revenue": 5681.586147722818,
+          "growth": 0.035,
+          "ebit_margin": 0.11247420915405701,
+          "ebit": 639.0319087057693,
+          "cash_tax": 159.75797717644232,
+          "nopat": 479.273931529327,
+          "sales_to_incremental_capital": 1.8339775068525572,
+          "reinvestment": 92.9387540440471,
+          "fcff": 386.3351774852799,
+          "unlevered_liquidity_buffer": 2520.01435725516,
+          "years_after_cutoff": 13.315068493150685
+        },
+        {
+          "year": 2040,
+          "end": "2040-12-31",
+          "revenue": 5852.033732154503,
+          "growth": 0.03,
+          "ebit_margin": 0.12,
+          "ebit": 702.2440478585403,
+          "cash_tax": 175.56101196463507,
+          "nopat": 526.6830358939052,
+          "sales_to_incremental_capital": 1.777777777777778,
+          "reinvestment": 98.75306923010722,
+          "fcff": 427.929966663798,
+          "unlevered_liquidity_buffer": 2947.944323918958,
+          "years_after_cutoff": 14.317808219178081
+        }
+      ],
+      "anchor": {
+        "anchor_sales_to_capital": 2.3397750685255727,
+        "mature_sales_to_capital": 1.777777777777778,
+        "anchor_net_reinvestment": 182.15980801504185
+      },
+      "terminal": {
+        "nopat": 542.4835269707223,
+        "reinvestment": 101.71566130701044,
+        "fcff": 440.76786566371186,
+        "reinvestment_rate": 0.1875,
+        "value": 3390.5220435670144
+      },
+      "schedule": [
+        {
+          "end": "2026-09-30",
+          "fcff": -28.573696835914248,
+          "years_after_cutoff": 0.0547945205479452
+        },
+        {
+          "end": "2026-12-31",
+          "fcff": -139.36674388895534,
+          "years_after_cutoff": 0.30684931506849317
+        },
+        {
+          "end": "2027-12-31",
+          "fcff": -296.48369364561904,
+          "years_after_cutoff": 1.3068493150684932
+        },
+        {
+          "end": "2028-12-31",
+          "fcff": -232.2413265866882,
+          "years_after_cutoff": 2.3095890410958906
+        },
+        {
+          "end": "2029-12-31",
+          "fcff": -166.49393288697811,
+          "years_after_cutoff": 3.3095890410958906
+        },
+        {
+          "end": "2030-12-31",
+          "fcff": -102.06482293281448,
+          "years_after_cutoff": 4.30958904109589
+        },
+        {
+          "year": 2031,
+          "end": "2031-12-31",
+          "revenue": 2816.5002020175793,
+          "growth": 0.18,
+          "ebit_margin": 0.052267882386513025,
+          "ebit": 147.21250130064502,
+          "cash_tax": 36.803125325161254,
+          "nopat": 110.40937597548375,
+          "sales_to_incremental_capital": 2.283575339450793,
+          "reinvestment": 197.33968244340605,
+          "fcff": -86.93030646792229,
+          "unlevered_liquidity_buffer": 1289.7632523212542,
+          "years_after_cutoff": 5.30958904109589
+        },
+        {
+          "year": 2032,
+          "end": "2032-12-31",
+          "revenue": 3267.140234340392,
+          "growth": 0.16,
+          "ebit_margin": 0.05979367323245602,
+          "ebit": 195.35431557675918,
+          "cash_tax": 48.838578894189794,
+          "nopat": 146.51573668256938,
+          "sales_to_incremental_capital": 2.2273756103760136,
+          "reinvestment": 205.35361466512563,
+          "fcff": -58.83787798255625,
+          "unlevered_liquidity_buffer": 1230.925374338698,
+          "years_after_cutoff": 6.3123287671232875
+        },
+        {
+          "year": 2033,
+          "end": "2033-12-31",
+          "revenue": 3724.5398671480475,
+          "growth": 0.14,
+          "ebit_margin": 0.06731946407839902,
+          "ebit": 250.73402779503803,
+          "cash_tax": 62.68350694875951,
+          "nopat": 188.05052084627852,
+          "sales_to_incremental_capital": 2.171175881301234,
+          "reinvestment": 205.85379006232407,
+          "fcff": -17.80326921604555,
+          "unlevered_liquidity_buffer": 1213.1221051226526,
+          "years_after_cutoff": 7.3123287671232875
+        },
+        {
+          "year": 2034,
+          "end": "2034-12-31",
+          "revenue": 4171.484651205814,
+          "growth": 0.12,
+          "ebit_margin": 0.07484525492434202,
+          "ebit": 312.2158321324791,
+          "cash_tax": 78.05395803311977,
+          "nopat": 234.1618740993593,
+          "sales_to_incremental_capital": 2.114976152226455,
+          "reinvestment": 197.23554077971298,
+          "fcff": 36.92633331964632,
+          "unlevered_liquidity_buffer": 1250.048438442299,
+          "years_after_cutoff": 8.312328767123288
+        },
+        {
+          "year": 2035,
+          "end": "2035-12-31",
+          "revenue": 4588.633116326396,
+          "growth": 0.1,
+          "ebit_margin": 0.082371045770285,
+          "ebit": 377.97050844796706,
+          "cash_tax": 94.49262711199177,
+          "nopat": 283.4778813359753,
+          "sales_to_incremental_capital": 2.0587764231516754,
+          "reinvestment": 178.3052521769952,
+          "fcff": 105.17262915898013,
+          "unlevered_liquidity_buffer": 1355.221067601279,
+          "years_after_cutoff": 9.312328767123288
+        },
+        {
+          "year": 2036,
+          "end": "2036-12-31",
+          "revenue": 4955.723765632508,
+          "growth": 0.08,
+          "ebit_margin": 0.089896836616228,
+          "ebit": 445.5038896742238,
+          "cash_tax": 111.37597241855595,
+          "nopat": 334.12791725566785,
+          "sales_to_incremental_capital": 2.002576694076896,
+          "reinvestment": 148.48041866132542,
+          "fcff": 185.64749859434244,
+          "unlevered_liquidity_buffer": 1540.8685661956215,
+          "years_after_cutoff": 10.315068493150685
+        },
+        {
+          "year": 2037,
+          "end": "2037-12-31",
+          "revenue": 5253.067191570459,
+          "growth": 0.06,
+          "ebit_margin": 0.09742262746217101,
+          "ebit": 511.7676080381217,
+          "cash_tax": 127.94190200953042,
+          "nopat": 383.8257060285913,
+          "sales_to_incremental_capital": 1.9463769650021163,
+          "reinvestment": 121.45027806595195,
+          "fcff": 262.3754279626394,
+          "unlevered_liquidity_buffer": 1803.2439941582609,
+          "years_after_cutoff": 11.315068493150685
+        },
+        {
+          "year": 2038,
+          "end": "2038-12-31",
+          "revenue": 5489.455215191129,
+          "growth": 0.045,
+          "ebit_margin": 0.10494841830811401,
+          "ebit": 576.1096422075367,
+          "cash_tax": 144.02741055188417,
+          "nopat": 432.08223165565255,
+          "sales_to_incremental_capital": 1.8901772359273368,
+          "reinvestment": 101.64704604403327,
+          "fcff": 330.43518561161926,
+          "unlevered_liquidity_buffer": 2133.67917976988,
+          "years_after_cutoff": 12.315068493150685
+        },
+        {
+          "year": 2039,
+          "end": "2039-12-31",
+          "revenue": 5681.586147722818,
+          "growth": 0.035,
+          "ebit_margin": 0.11247420915405701,
+          "ebit": 639.0319087057693,
+          "cash_tax": 159.75797717644232,
+          "nopat": 479.273931529327,
+          "sales_to_incremental_capital": 1.8339775068525572,
+          "reinvestment": 92.9387540440471,
+          "fcff": 386.3351774852799,
+          "unlevered_liquidity_buffer": 2520.01435725516,
+          "years_after_cutoff": 13.315068493150685
+        },
+        {
+          "year": 2040,
+          "end": "2040-12-31",
+          "revenue": 5852.033732154503,
+          "growth": 0.03,
+          "ebit_margin": 0.12,
+          "ebit": 702.2440478585403,
+          "cash_tax": 175.56101196463507,
+          "nopat": 526.6830358939052,
+          "sales_to_incremental_capital": 1.777777777777778,
+          "reinvestment": 98.75306923010722,
+          "fcff": 427.929966663798,
+          "unlevered_liquidity_buffer": 2947.944323918958,
+          "years_after_cutoff": 14.317808219178081
+        }
+      ],
+      "pv_explicit_fcff": -510.8503964873972,
+      "pv_terminal": 404.9202015560886,
+      "enterprise_value": -105.93019493130856,
+      "terminal_share": null
+    },
+    "upside": {
+      "case": "upside",
+      "wacc": 0.16,
+      "growth": 0.03,
+      "transition": [
+        {
+          "year": 2031,
+          "end": "2031-12-31",
+          "revenue": 4070.5609571242403,
+          "growth": 0.22,
+          "ebit_margin": 0.15965119080285806,
+          "ebit": 649.8699040405066,
+          "cash_tax": 162.46747601012666,
+          "nopat": 487.40242803037995,
+          "sales_to_incremental_capital": 2.5349207268797134,
+          "reinvestment": 321.15883656328606,
+          "fcff": 166.2435914670939,
+          "unlevered_liquidity_buffer": 2081.4488599217766,
+          "years_after_cutoff": 5.30958904109589
+        },
+        {
+          "year": 2032,
+          "end": "2032-12-31",
+          "revenue": 4884.673148549088,
+          "growth": 0.2,
+          "ebit_margin": 0.16413439182476272,
+          "ebit": 801.7428564998535,
+          "cash_tax": 200.43571412496337,
+          "nopat": 601.3071423748901,
+          "sales_to_incremental_capital": 2.401411016485671,
+          "reinvestment": 366.1352266242018,
+          "fcff": 235.1719157506883,
+          "unlevered_liquidity_buffer": 2316.620775672465,
+          "years_after_cutoff": 6.3123287671232875
+        },
+        {
+          "year": 2033,
+          "end": "2033-12-31",
+          "revenue": 5763.914315287924,
+          "growth": 0.18,
+          "ebit_margin": 0.16861759284666739,
+          "ebit": 971.8973572182969,
+          "cash_tax": 242.97433930457422,
+          "nopat": 728.9230179137227,
+          "sales_to_incremental_capital": 2.267901306091629,
+          "reinvestment": 406.6430439318278,
+          "fcff": 322.2799739818949,
+          "unlevered_liquidity_buffer": 2638.9007496543595,
+          "years_after_cutoff": 7.3123287671232875
+        },
+        {
+          "year": 2034,
+          "end": "2034-12-31",
+          "revenue": 6686.140605733992,
+          "growth": 0.16,
+          "ebit_margin": 0.17310079386857205,
+          "ebit": 1157.3762467694492,
+          "cash_tax": 289.3440616923623,
+          "nopat": 868.0321850770869,
+          "sales_to_incremental_capital": 2.1343915956975867,
+          "reinvestment": 438.5604247550577,
+          "fcff": 429.4717603220292,
+          "unlevered_liquidity_buffer": 3068.3725099763888,
+          "years_after_cutoff": 8.312328767123288
+        },
+        {
+          "year": 2035,
+          "end": "2035-12-31",
+          "revenue": 7622.200290536752,
+          "growth": 0.14,
+          "ebit_margin": 0.17758399489047672,
+          "ebit": 1353.5807774488687,
+          "cash_tax": 338.3951943622172,
+          "nopat": 1015.1855830866516,
+          "sales_to_incremental_capital": 2.0008818853035444,
+          "reinvestment": 457.1304491197644,
+          "fcff": 558.0551339668872,
+          "unlevered_liquidity_buffer": 3626.427643943276,
+          "years_after_cutoff": 9.312328767123288
+        },
+        {
+          "year": 2036,
+          "end": "2036-12-31",
+          "revenue": 8536.864325401162,
+          "growth": 0.12,
+          "ebit_margin": 0.18206719591238135,
+          "ebit": 1554.2829496102327,
+          "cash_tax": 388.57073740255817,
+          "nopat": 1165.7122122076744,
+          "sales_to_incremental_capital": 1.8673721749095022,
+          "reinvestment": 457.15923371380865,
+          "fcff": 708.5529784938658,
+          "unlevered_liquidity_buffer": 4334.980622437142,
+          "years_after_cutoff": 10.315068493150685
+        },
+        {
+          "year": 2037,
+          "end": "2037-12-31",
+          "revenue": 9390.550757941279,
+          "growth": 0.1,
+          "ebit_margin": 0.18655039693428602,
+          "ebit": 1751.810971325506,
+          "cash_tax": 437.9527428313765,
+          "nopat": 1313.8582284941294,
+          "sales_to_incremental_capital": 1.7338624645154601,
+          "reinvestment": 406.1979085765692,
+          "fcff": 907.6603199175602,
+          "unlevered_liquidity_buffer": 5242.640942354703,
+          "years_after_cutoff": 11.315068493150685
+        },
+        {
+          "year": 2038,
+          "end": "2038-12-31",
+          "revenue": 10094.842064786873,
+          "growth": 0.075,
+          "ebit_margin": 0.19103359795619068,
+          "ebit": 1928.4540004357373,
+          "cash_tax": 482.1135001089343,
+          "nopat": 1446.340500326803,
+          "sales_to_incremental_capital": 1.6003527541214178,
+          "reinvestment": 315.3942791296932,
+          "fcff": 1130.94622119711,
+          "unlevered_liquidity_buffer": 6373.587163551812,
+          "years_after_cutoff": 12.315068493150685
+        },
+        {
+          "year": 2039,
+          "end": "2039-12-31",
+          "revenue": 10599.584168026218,
+          "growth": 0.05,
+          "ebit_margin": 0.19551679897809535,
+          "ebit": 2072.396767031384,
+          "cash_tax": 518.099191757846,
+          "nopat": 1554.297575273538,
+          "sales_to_incremental_capital": 1.4668430437273754,
+          "reinvestment": 216.78360639919092,
+          "fcff": 1337.5139688743473,
+          "unlevered_liquidity_buffer": 7711.10113242616,
+          "years_after_cutoff": 13.315068493150685
+        },
+        {
+          "year": 2040,
+          "end": "2040-12-31",
+          "revenue": 10917.571693067006,
+          "growth": 0.03,
+          "ebit_margin": 0.2,
+          "ebit": 2183.5143386134014,
+          "cash_tax": 545.8785846533503,
+          "nopat": 1637.635753960051,
+          "sales_to_incremental_capital": 1.3333333333333333,
+          "reinvestment": 245.64536309400762,
+          "fcff": 1391.9903908660435,
+          "unlevered_liquidity_buffer": 9103.091523292203,
+          "years_after_cutoff": 14.317808219178081
+        }
+      ],
+      "anchor": {
+        "anchor_sales_to_capital": 2.6684304372737557,
+        "mature_sales_to_capital": 1.3333333333333333,
+        "anchor_net_reinvestment": 267.00002158194064
+      },
+      "terminal": {
+        "nopat": 1686.7648265788525,
+        "reinvestment": 253.01472398682785,
+        "fcff": 1433.7501025920246,
+        "reinvestment_rate": 0.15,
+        "value": 11028.846943015573
+      },
+      "schedule": [
+        {
+          "end": "2026-09-30",
+          "fcff": -20.57416635646217,
+          "years_after_cutoff": 0.0547945205479452
+        },
+        {
+          "end": "2026-12-31",
+          "fcff": -93.148716183476,
+          "years_after_cutoff": 0.30684931506849317
+        },
+        {
+          "end": "2027-12-31",
+          "fcff": -277.3562936409956,
+          "years_after_cutoff": 1.3068493150684932
+        },
+        {
+          "end": "2028-12-31",
+          "fcff": -149.91355133700048,
+          "years_after_cutoff": 2.3095890410958906
+        },
+        {
+          "end": "2029-12-31",
+          "fcff": -31.40302467369571,
+          "years_after_cutoff": 3.3095890410958906
+        },
+        {
+          "end": "2030-12-31",
+          "fcff": 121.29142985113435,
+          "years_after_cutoff": 4.30958904109589
+        },
+        {
+          "year": 2031,
+          "end": "2031-12-31",
+          "revenue": 4070.5609571242403,
+          "growth": 0.22,
+          "ebit_margin": 0.15965119080285806,
+          "ebit": 649.8699040405066,
+          "cash_tax": 162.46747601012666,
+          "nopat": 487.40242803037995,
+          "sales_to_incremental_capital": 2.5349207268797134,
+          "reinvestment": 321.15883656328606,
+          "fcff": 166.2435914670939,
+          "unlevered_liquidity_buffer": 2081.4488599217766,
+          "years_after_cutoff": 5.30958904109589
+        },
+        {
+          "year": 2032,
+          "end": "2032-12-31",
+          "revenue": 4884.673148549088,
+          "growth": 0.2,
+          "ebit_margin": 0.16413439182476272,
+          "ebit": 801.7428564998535,
+          "cash_tax": 200.43571412496337,
+          "nopat": 601.3071423748901,
+          "sales_to_incremental_capital": 2.401411016485671,
+          "reinvestment": 366.1352266242018,
+          "fcff": 235.1719157506883,
+          "unlevered_liquidity_buffer": 2316.620775672465,
+          "years_after_cutoff": 6.3123287671232875
+        },
+        {
+          "year": 2033,
+          "end": "2033-12-31",
+          "revenue": 5763.914315287924,
+          "growth": 0.18,
+          "ebit_margin": 0.16861759284666739,
+          "ebit": 971.8973572182969,
+          "cash_tax": 242.97433930457422,
+          "nopat": 728.9230179137227,
+          "sales_to_incremental_capital": 2.267901306091629,
+          "reinvestment": 406.6430439318278,
+          "fcff": 322.2799739818949,
+          "unlevered_liquidity_buffer": 2638.9007496543595,
+          "years_after_cutoff": 7.3123287671232875
+        },
+        {
+          "year": 2034,
+          "end": "2034-12-31",
+          "revenue": 6686.140605733992,
+          "growth": 0.16,
+          "ebit_margin": 0.17310079386857205,
+          "ebit": 1157.3762467694492,
+          "cash_tax": 289.3440616923623,
+          "nopat": 868.0321850770869,
+          "sales_to_incremental_capital": 2.1343915956975867,
+          "reinvestment": 438.5604247550577,
+          "fcff": 429.4717603220292,
+          "unlevered_liquidity_buffer": 3068.3725099763888,
+          "years_after_cutoff": 8.312328767123288
+        },
+        {
+          "year": 2035,
+          "end": "2035-12-31",
+          "revenue": 7622.200290536752,
+          "growth": 0.14,
+          "ebit_margin": 0.17758399489047672,
+          "ebit": 1353.5807774488687,
+          "cash_tax": 338.3951943622172,
+          "nopat": 1015.1855830866516,
+          "sales_to_incremental_capital": 2.0008818853035444,
+          "reinvestment": 457.1304491197644,
+          "fcff": 558.0551339668872,
+          "unlevered_liquidity_buffer": 3626.427643943276,
+          "years_after_cutoff": 9.312328767123288
+        },
+        {
+          "year": 2036,
+          "end": "2036-12-31",
+          "revenue": 8536.864325401162,
+          "growth": 0.12,
+          "ebit_margin": 0.18206719591238135,
+          "ebit": 1554.2829496102327,
+          "cash_tax": 388.57073740255817,
+          "nopat": 1165.7122122076744,
+          "sales_to_incremental_capital": 1.8673721749095022,
+          "reinvestment": 457.15923371380865,
+          "fcff": 708.5529784938658,
+          "unlevered_liquidity_buffer": 4334.980622437142,
+          "years_after_cutoff": 10.315068493150685
+        },
+        {
+          "year": 2037,
+          "end": "2037-12-31",
+          "revenue": 9390.550757941279,
+          "growth": 0.1,
+          "ebit_margin": 0.18655039693428602,
+          "ebit": 1751.810971325506,
+          "cash_tax": 437.9527428313765,
+          "nopat": 1313.8582284941294,
+          "sales_to_incremental_capital": 1.7338624645154601,
+          "reinvestment": 406.1979085765692,
+          "fcff": 907.6603199175602,
+          "unlevered_liquidity_buffer": 5242.640942354703,
+          "years_after_cutoff": 11.315068493150685
+        },
+        {
+          "year": 2038,
+          "end": "2038-12-31",
+          "revenue": 10094.842064786873,
+          "growth": 0.075,
+          "ebit_margin": 0.19103359795619068,
+          "ebit": 1928.4540004357373,
+          "cash_tax": 482.1135001089343,
+          "nopat": 1446.340500326803,
+          "sales_to_incremental_capital": 1.6003527541214178,
+          "reinvestment": 315.3942791296932,
+          "fcff": 1130.94622119711,
+          "unlevered_liquidity_buffer": 6373.587163551812,
+          "years_after_cutoff": 12.315068493150685
+        },
+        {
+          "year": 2039,
+          "end": "2039-12-31",
+          "revenue": 10599.584168026218,
+          "growth": 0.05,
+          "ebit_margin": 0.19551679897809535,
+          "ebit": 2072.396767031384,
+          "cash_tax": 518.099191757846,
+          "nopat": 1554.297575273538,
+          "sales_to_incremental_capital": 1.4668430437273754,
+          "reinvestment": 216.78360639919092,
+          "fcff": 1337.5139688743473,
+          "unlevered_liquidity_buffer": 7711.10113242616,
+          "years_after_cutoff": 13.315068493150685
+        },
+        {
+          "year": 2040,
+          "end": "2040-12-31",
+          "revenue": 10917.571693067006,
+          "growth": 0.03,
+          "ebit_margin": 0.2,
+          "ebit": 2183.5143386134014,
+          "cash_tax": 545.8785846533503,
+          "nopat": 1637.635753960051,
+          "sales_to_incremental_capital": 1.3333333333333333,
+          "reinvestment": 245.64536309400762,
+          "fcff": 1391.9903908660435,
+          "unlevered_liquidity_buffer": 9103.091523292203,
+          "years_after_cutoff": 14.317808219178081
+        }
+      ],
+      "pv_explicit_fcff": 998.2456305701492,
+      "pv_terminal": 1317.143162531646,
+      "enterprise_value": 2315.3887931017953,
+      "terminal_share": 0.5688647912850714
+    }
+  },
+  "grid": [
+    {
+      "wacc": 0.14,
+      "growth": 0.02,
+      "enterprise_value": 128.48064761245462
+    },
+    {
+      "wacc": 0.14,
+      "growth": 0.03,
+      "enterprise_value": 138.29036375133433
+    },
+    {
+      "wacc": 0.14,
+      "growth": 0.04,
+      "enterprise_value": 150.0282046761954
+    },
+    {
+      "wacc": 0.16,
+      "growth": 0.02,
+      "enterprise_value": -106.06412234239667
+    },
+    {
+      "wacc": 0.16,
+      "growth": 0.03,
+      "enterprise_value": -105.93019493130856
+    },
+    {
+      "wacc": 0.16,
+      "growth": 0.04,
+      "enterprise_value": -105.79626752022034
+    },
+    {
+      "wacc": 0.18,
+      "growth": 0.02,
+      "enterprise_value": -256.812479277405
+    },
+    {
+      "wacc": 0.18,
+      "growth": 0.03,
+      "enterprise_value": -260.1732059115289
+    },
+    {
+      "wacc": 0.18,
+      "growth": 0.04,
+      "enterprise_value": -264.02925048379564
+    },
+    {
+      "wacc": 0.2,
+      "growth": 0.02,
+      "enterprise_value": -355.5715837988606
+    },
+    {
+      "wacc": 0.2,
+      "growth": 0.03,
+      "enterprise_value": -359.908289810259
+    },
+    {
+      "wacc": 0.2,
+      "growth": 0.04,
+      "enterprise_value": -364.7977108807314
+    }
+  ],
+  "downside_gate": "2030: additional external funding of 314.688 million required; no committed facility assumed."
+}

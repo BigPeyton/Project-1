@@ -1,0 +1,128 @@
+{
+  "exit_year": 2029,
+  "closure_cost": 100.0,
+  "asset_recoveries": {
+    "receivables": 172.3868089728288,
+    "contract_assets": 73.59202956150001,
+    "inventory": 178.63222223100829,
+    "prepaids": 15.331672825312504,
+    "ppe": 287.55265072635797,
+    "intangibles": 9.332999999999997,
+    "goodwill": 0.0,
+    "rou_operating": 0.0,
+    "rou_finance": 3.512853581767578,
+    "restricted_cash": 8.413,
+    "deferred_tax_assets": 0.0,
+    "other_noncurrent_assets": 0.0
+  },
+  "operating_settlements": {
+    "capex_payable": 0.0,
+    "contract_liabilities": 269.83744172550007,
+    "contract_loss_provision": 0.0,
+    "deferred_tax_liabilities": 3.0437999999999983,
+    "operating_lease_noncurrent": 104.378,
+    "ordinary_liabilities": 212.80803974812127
+  },
+  "net_exit_recovery": 58.68695642515377,
+  "reserve_release": 200,
+  "terminal_exit_cashflow": 258.68695642515377,
+  "exit_financial_claims": 13.777999999999999,
+  "exit_cash_sufficiency": 440.70127286521836,
+  "schedule": [
+    {
+      "end": "2026-09-30",
+      "fcff": -59.497123071768904,
+      "years_after_cutoff": 0.0547945205479452
+    },
+    {
+      "end": "2026-12-31",
+      "fcff": -294.317285823887,
+      "years_after_cutoff": 0.30684931506849317
+    },
+    {
+      "end": "2027-12-31",
+      "fcff": -527.3012007960641,
+      "years_after_cutoff": 1.3068493150684932
+    },
+    {
+      "end": "2028-12-31",
+      "fcff": -524.6115768739944,
+      "years_after_cutoff": 2.3095890410958906
+    },
+    {
+      "end": "2029-12-31",
+      "fcff": -534.6966843790794,
+      "years_after_cutoff": 3.3095890410958906
+    }
+  ],
+  "valuation": {
+    "case": "downside",
+    "pv_explicit_fcff": -1474.0975723466747,
+    "pv_terminal": 158.28693745217515,
+    "enterprise_value": -1315.8106348944996,
+    "terminal_share": null
+  },
+  "equity_if_converted": {
+    "case": "downside",
+    "lines": {
+      "operating_value": -1315.8106348944996,
+      "cutoff_cash": 1931.9061199194582,
+      "securities": 258.105,
+      "operating_cash_reserve": -200,
+      "customer_financing": 0,
+      "capped_calls": 0,
+      "new_financing_cash_pv": 0,
+      "other_debt": -1.716,
+      "finance_leases": -14.762695652173912,
+      "earnout": -13.674,
+      "financing_fee_payable": -12.763,
+      "seller_payable": -0.8,
+      "remaining_option_receipts": 3.70372408,
+      "retained_note_claim": 0
+    },
+    "mode": "converted",
+    "equity": 634.1885134527847,
+    "shares": 655.006167,
+    "price": 0.9682176220682587,
+    "note_claim": 0,
+    "note_conversion": true,
+    "option_receipts": 3.70372408,
+    "option_shares": 3.397912,
+    "residual_before_limited_liability": 634.1885134527847,
+    "unallocated_claim_shortfall": 0,
+    "conversion_supported": false,
+    "option_exercise_supported": false
+  },
+  "intrinsic_only_diagnostic": {
+    "case": "downside",
+    "lines": {
+      "operating_value": -1315.8106348944996,
+      "cutoff_cash": 1931.9061199194582,
+      "securities": 258.105,
+      "operating_cash_reserve": -200,
+      "customer_financing": 0,
+      "capped_calls": 0,
+      "new_financing_cash_pv": 0,
+      "other_debt": -1.716,
+      "finance_leases": -14.762695652173912,
+      "earnout": -13.674,
+      "financing_fee_payable": -12.763,
+      "seller_payable": -0.8,
+      "remaining_option_receipts": 0.0,
+      "retained_note_claim": -12.933956538030088
+    },
+    "mode": "intrinsic_only",
+    "equity": 617.5508328347546,
+    "shares": 649.00051,
+    "price": 0.9515413675634163,
+    "note_claim": 12.933956538030088,
+    "note_conversion": false,
+    "option_receipts": 0.0,
+    "option_shares": 0,
+    "residual_before_limited_liability": 617.5508328347546,
+    "unallocated_claim_shortfall": 0,
+    "conversion_supported": false,
+    "option_exercise_supported": false
+  },
+  "new_financing": 0.0
+}

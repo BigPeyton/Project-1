@@ -1,0 +1,87 @@
+{
+  "peers": [
+    {
+      "ticker": "RDW",
+      "currency": "USD",
+      "equity": 2717.4196598299995,
+      "ev": 2252.2336598299994,
+      "price_sales": 8.1024854116065,
+      "ev_sales": 6.715447982533297,
+      "reported_operating_margin": -0.6848241253976821
+    },
+    {
+      "ticker": "AVIO",
+      "currency": "EUR",
+      "equity": 1293.01481814,
+      "ev": 767.8850211399999,
+      "price_sales": 2.215242368620329,
+      "ev_sales": 1.3155699449022595,
+      "reported_operating_margin": 0.02050060819955798
+    }
+  ],
+  "indications": [
+    {
+      "ticker": "RDW",
+      "ev_method_price_if_converted": 9.141103801602705,
+      "ps_method_price_basic_equivalent": 7.624202768951617,
+      "implied_lease_inclusive_ev": 4041.3498804405554,
+      "current_lease_plus5_price": 9.133470285688038,
+      "current_lease_minus5_price": 9.148737317517373
+    },
+    {
+      "ticker": "AVIO",
+      "ev_method_price_if_converted": 4.179866233333642,
+      "ps_method_price_basic_equivalent": 2.0844785448845795,
+      "implied_lease_inclusive_ev": 791.7086772722348,
+      "current_lease_plus5_price": 4.172232717418974,
+      "current_lease_minus5_price": 4.1874997492483095
+    }
+  ],
+  "leave_one_out": [
+    {
+      "removed": "RDW",
+      "remaining": [
+        {
+          "ticker": "AVIO",
+          "ev_method_price_if_converted": 4.179866233333642,
+          "ps_method_price_basic_equivalent": 2.0844785448845795,
+          "implied_lease_inclusive_ev": 791.7086772722348,
+          "current_lease_plus5_price": 4.172232717418974,
+          "current_lease_minus5_price": 4.1874997492483095
+        }
+      ],
+      "interpretation": "Single-peer indication only; no remaining cross-peer range."
+    },
+    {
+      "removed": "AVIO",
+      "remaining": [
+        {
+          "ticker": "RDW",
+          "ev_method_price_if_converted": 9.141103801602705,
+          "ps_method_price_basic_equivalent": 7.624202768951617,
+          "implied_lease_inclusive_ev": 4041.3498804405554,
+          "current_lease_plus5_price": 9.133470285688038,
+          "current_lease_minus5_price": 9.148737317517373
+        }
+      ],
+      "interpretation": "Single-peer indication only; no remaining cross-peer range."
+    }
+  ],
+  "peer_cash_stress": [
+    {
+      "ticker": "RDW",
+      "cash_deducted_fraction": 0.5,
+      "ev_sales": 7.545797644559471,
+      "target_price": 9.904002872532658
+    },
+    {
+      "ticker": "AVIO",
+      "cash_deducted_fraction": 0.5,
+      "ev_sales": 1.7828276184961191,
+      "target_price": 4.609167841284931
+    }
+  ],
+  "target_sales": 601.799,
+  "target_basic_equivalent_shares": 639.551146,
+  "target_operating_lease_adjustment": 115.194
+}

@@ -1,0 +1,448 @@
+{
+  "cases": {
+    "base": {
+      "if_converted": {
+        "case": "base",
+        "lines": {
+          "operating_value": -105.93019493130856,
+          "cutoff_cash": 2043.230454368535,
+          "securities": 258.105,
+          "operating_cash_reserve": -200,
+          "customer_financing": 0,
+          "capped_calls": 0,
+          "new_financing_cash_pv": 0,
+          "other_debt": -1.716,
+          "finance_leases": -14.762695652173912,
+          "earnout": -13.674,
+          "financing_fee_payable": -12.763,
+          "seller_payable": -0.8,
+          "remaining_option_receipts": 3.70372408,
+          "retained_note_claim": 0
+        },
+        "mode": "converted",
+        "equity": 1955.3932878650526,
+        "shares": 655.006167,
+        "price": 2.985305156470462,
+        "note_claim": 0,
+        "note_conversion": true,
+        "option_receipts": 3.70372408,
+        "option_shares": 3.397912,
+        "residual_before_limited_liability": 1955.3932878650526,
+        "unallocated_claim_shortfall": 0,
+        "conversion_supported": false,
+        "option_exercise_supported": true
+      },
+      "retained_at_quote_parity": {
+        "case": "base",
+        "lines": {
+          "operating_value": -105.93019493130856,
+          "cutoff_cash": 2043.230454368535,
+          "securities": 258.105,
+          "operating_cash_reserve": -200,
+          "customer_financing": 0,
+          "capped_calls": 0,
+          "new_financing_cash_pv": 0,
+          "other_debt": -1.716,
+          "finance_leases": -14.762695652173912,
+          "earnout": -13.674,
+          "financing_fee_payable": -12.763,
+          "seller_payable": -0.8,
+          "remaining_option_receipts": 3.70372408,
+          "retained_note_claim": -161.5758802
+        },
+        "mode": "retained",
+        "equity": 1793.8174076650525,
+        "shares": 652.398422,
+        "price": 2.7495734924770443,
+        "note_claim": 161.5758802,
+        "note_conversion": false,
+        "option_receipts": 3.70372408,
+        "option_shares": 3.397912,
+        "residual_before_limited_liability": 1793.8174076650525,
+        "unallocated_claim_shortfall": 0,
+        "conversion_supported": false,
+        "option_exercise_supported": true
+      },
+      "retained_at_stale_june_fair_value": {
+        "case": "base",
+        "lines": {
+          "operating_value": -105.93019493130856,
+          "cutoff_cash": 2043.230454368535,
+          "securities": 258.105,
+          "operating_cash_reserve": -200,
+          "customer_financing": 0,
+          "capped_calls": 0,
+          "new_financing_cash_pv": 0,
+          "other_debt": -1.716,
+          "finance_leases": -14.762695652173912,
+          "earnout": -13.674,
+          "financing_fee_payable": -12.763,
+          "seller_payable": -0.8,
+          "remaining_option_receipts": 3.70372408,
+          "retained_note_claim": -280.789
+        },
+        "mode": "retained",
+        "equity": 1674.6042878650526,
+        "shares": 652.398422,
+        "price": 2.566842946571463,
+        "note_claim": 280.789,
+        "note_conversion": false,
+        "option_receipts": 3.70372408,
+        "option_shares": 3.397912,
+        "residual_before_limited_liability": 1674.6042878650526,
+        "unallocated_claim_shortfall": 0,
+        "conversion_supported": false,
+        "option_exercise_supported": true
+      },
+      "intrinsic_only_diagnostic": {
+        "case": "base",
+        "lines": {
+          "operating_value": -105.93019493130856,
+          "cutoff_cash": 2043.230454368535,
+          "securities": 258.105,
+          "operating_cash_reserve": -200,
+          "customer_financing": 0,
+          "capped_calls": 0,
+          "new_financing_cash_pv": 0,
+          "other_debt": -1.716,
+          "finance_leases": -14.762695652173912,
+          "earnout": -13.674,
+          "financing_fee_payable": -12.763,
+          "seller_payable": -0.8,
+          "remaining_option_receipts": 3.70372408,
+          "retained_note_claim": -12.933956538030088
+        },
+        "mode": "intrinsic_only",
+        "equity": 1942.4593313270225,
+        "shares": 652.398422,
+        "price": 2.977412675788205,
+        "note_claim": 12.933956538030088,
+        "note_conversion": false,
+        "option_receipts": 3.70372408,
+        "option_shares": 3.397912,
+        "residual_before_limited_liability": 1942.4593313270225,
+        "unallocated_claim_shortfall": 0,
+        "conversion_supported": false,
+        "option_exercise_supported": true
+      }
+    },
+    "upside": {
+      "if_converted": {
+        "case": "upside",
+        "lines": {
+          "operating_value": 2315.3887931017953,
+          "cutoff_cash": 2072.028764094562,
+          "securities": 258.105,
+          "operating_cash_reserve": -200,
+          "customer_financing": 0,
+          "capped_calls": 0,
+          "new_financing_cash_pv": 0,
+          "other_debt": -1.716,
+          "finance_leases": -14.762695652173912,
+          "earnout": -13.674,
+          "financing_fee_payable": -12.763,
+          "seller_payable": -0.8,
+          "remaining_option_receipts": 3.70372408,
+          "retained_note_claim": 0
+        },
+        "mode": "converted",
+        "equity": 4405.5105856241835,
+        "shares": 655.006167,
+        "price": 6.725907033519859,
+        "note_claim": 0,
+        "note_conversion": true,
+        "option_receipts": 3.70372408,
+        "option_shares": 3.397912,
+        "residual_before_limited_liability": 4405.5105856241835,
+        "unallocated_claim_shortfall": 0,
+        "conversion_supported": true,
+        "option_exercise_supported": true
+      },
+      "retained_at_quote_parity": {
+        "case": "upside",
+        "lines": {
+          "operating_value": 2315.3887931017953,
+          "cutoff_cash": 2072.028764094562,
+          "securities": 258.105,
+          "operating_cash_reserve": -200,
+          "customer_financing": 0,
+          "capped_calls": 0,
+          "new_financing_cash_pv": 0,
+          "other_debt": -1.716,
+          "finance_leases": -14.762695652173912,
+          "earnout": -13.674,
+          "financing_fee_payable": -12.763,
+          "seller_payable": -0.8,
+          "remaining_option_receipts": 3.70372408,
+          "retained_note_claim": -161.5758802
+        },
+        "mode": "retained",
+        "equity": 4243.934705424183,
+        "shares": 652.398422,
+        "price": 6.505127177367979,
+        "note_claim": 161.5758802,
+        "note_conversion": false,
+        "option_receipts": 3.70372408,
+        "option_shares": 3.397912,
+        "residual_before_limited_liability": 4243.934705424183,
+        "unallocated_claim_shortfall": 0,
+        "conversion_supported": true,
+        "option_exercise_supported": true
+      },
+      "retained_at_stale_june_fair_value": {
+        "case": "upside",
+        "lines": {
+          "operating_value": 2315.3887931017953,
+          "cutoff_cash": 2072.028764094562,
+          "securities": 258.105,
+          "operating_cash_reserve": -200,
+          "customer_financing": 0,
+          "capped_calls": 0,
+          "new_financing_cash_pv": 0,
+          "other_debt": -1.716,
+          "finance_leases": -14.762695652173912,
+          "earnout": -13.674,
+          "financing_fee_payable": -12.763,
+          "seller_payable": -0.8,
+          "remaining_option_receipts": 3.70372408,
+          "retained_note_claim": -280.789
+        },
+        "mode": "retained",
+        "equity": 4124.721585624184,
+        "shares": 652.398422,
+        "price": 6.322396631462397,
+        "note_claim": 280.789,
+        "note_conversion": false,
+        "option_receipts": 3.70372408,
+        "option_shares": 3.397912,
+        "residual_before_limited_liability": 4124.721585624184,
+        "unallocated_claim_shortfall": 0,
+        "conversion_supported": true,
+        "option_exercise_supported": true
+      },
+      "intrinsic_only_diagnostic": {
+        "case": "upside",
+        "lines": {
+          "operating_value": 2315.3887931017953,
+          "cutoff_cash": 2072.028764094562,
+          "securities": 258.105,
+          "operating_cash_reserve": -200,
+          "customer_financing": 0,
+          "capped_calls": 0,
+          "new_financing_cash_pv": 0,
+          "other_debt": -1.716,
+          "finance_leases": -14.762695652173912,
+          "earnout": -13.674,
+          "financing_fee_payable": -12.763,
+          "seller_payable": -0.8,
+          "remaining_option_receipts": 3.70372408,
+          "retained_note_claim": 0
+        },
+        "mode": "intrinsic_only",
+        "equity": 4405.5105856241835,
+        "shares": 655.006167,
+        "price": 6.725907033519859,
+        "note_claim": 0,
+        "note_conversion": true,
+        "option_receipts": 3.70372408,
+        "option_shares": 3.397912,
+        "residual_before_limited_liability": 4405.5105856241835,
+        "unallocated_claim_shortfall": 0,
+        "conversion_supported": true,
+        "option_exercise_supported": true
+      }
+    }
+  },
+  "sensitivities": [
+    {
+      "case": "base",
+      "label": "no remaining option exercise",
+      "price": 2.9951885182686224,
+      "shares": 651.608255,
+      "net_adjustment_to_reference": -3.703724080000029
+    },
+    {
+      "case": "base",
+      "label": "operating reserve 100",
+      "price": 3.137975474763816,
+      "shares": 655.006167,
+      "net_adjustment_to_reference": 100.0
+    },
+    {
+      "case": "base",
+      "label": "operating reserve 300",
+      "price": 2.832634838177108,
+      "shares": 655.006167,
+      "net_adjustment_to_reference": -100.0
+    },
+    {
+      "case": "base",
+      "label": "customer loan book recovery",
+      "price": 3.0343886638017756,
+      "shares": 655.006167,
+      "net_adjustment_to_reference": 32.15000000000009
+    },
+    {
+      "case": "base",
+      "label": "capped call maximum payoff, discounted",
+      "price": 3.2014383883116224,
+      "shares": 655.006167,
+      "net_adjustment_to_reference": 141.5685997496007
+    },
+    {
+      "case": "base",
+      "label": "forward minimum_proceeds",
+      "price": 3.5127946817009237,
+      "shares": 662.457367,
+      "net_adjustment_to_reference": 371.6834277861444
+    },
+    {
+      "case": "base",
+      "label": "forward maximum_proceeds",
+      "price": 3.7116541178219635,
+      "shares": 662.457367,
+      "net_adjustment_to_reference": 503.4193262419931
+    },
+    {
+      "case": "base",
+      "label": "hypothetical full ATM at 61.96",
+      "price": 5.624923694128343,
+      "shares": 686.3872164835378,
+      "net_adjustment_to_reference": 1905.48242948
+    },
+    {
+      "case": "base",
+      "label": "hypothetical full ATM at 30.98",
+      "price": 5.37900029913297,
+      "shares": 717.7682659670755,
+      "net_adjustment_to_reference": 1905.48242948
+    },
+    {
+      "case": "upside",
+      "label": "no remaining option exercise",
+      "price": 6.755296342192877,
+      "shares": 651.608255,
+      "net_adjustment_to_reference": -3.703724080000029
+    },
+    {
+      "case": "upside",
+      "label": "operating reserve 100",
+      "price": 6.878577351813213,
+      "shares": 655.006167,
+      "net_adjustment_to_reference": 100.0
+    },
+    {
+      "case": "upside",
+      "label": "operating reserve 300",
+      "price": 6.573236715226505,
+      "shares": 655.006167,
+      "net_adjustment_to_reference": -100.0
+    },
+    {
+      "case": "upside",
+      "label": "customer loan book recovery",
+      "price": 6.774990540851172,
+      "shares": 655.006167,
+      "net_adjustment_to_reference": 32.149999999999636
+    },
+    {
+      "case": "upside",
+      "label": "capped call maximum payoff, discounted",
+      "price": 6.94204026536102,
+      "shares": 655.006167,
+      "net_adjustment_to_reference": 141.56859974960116
+    },
+    {
+      "case": "upside",
+      "label": "forward minimum_proceeds",
+      "price": 7.2113229490439466,
+      "shares": 662.457367,
+      "net_adjustment_to_reference": 371.6834277861444
+    },
+    {
+      "case": "upside",
+      "label": "forward maximum_proceeds",
+      "price": 7.410182385164986,
+      "shares": 662.457367,
+      "net_adjustment_to_reference": 503.4193262419931
+    },
+    {
+      "case": "upside",
+      "label": "hypothetical full ATM at 61.96",
+      "price": 9.194508381779492,
+      "shares": 686.3872164835378,
+      "net_adjustment_to_reference": 1905.48242948
+    },
+    {
+      "case": "upside",
+      "label": "hypothetical full ATM at 30.98",
+      "price": 8.792521645689018,
+      "shares": 717.7682659670755,
+      "net_adjustment_to_reference": 1905.48242948
+    }
+  ],
+  "grid": [
+    {
+      "wacc": 0.14,
+      "growth": 0.02,
+      "price": 3.3431809358961586
+    },
+    {
+      "wacc": 0.14,
+      "growth": 0.03,
+      "price": 3.3581574607490614
+    },
+    {
+      "wacc": 0.14,
+      "growth": 0.04,
+      "price": 3.376077659849814
+    },
+    {
+      "wacc": 0.16,
+      "growth": 0.02,
+      "price": 2.9851006890656717
+    },
+    {
+      "wacc": 0.16,
+      "growth": 0.03,
+      "price": 2.985305156470462
+    },
+    {
+      "wacc": 0.16,
+      "growth": 0.04,
+      "price": 2.9855096238752523
+    },
+    {
+      "wacc": 0.18,
+      "growth": 0.02,
+      "price": 2.754952692710993
+    },
+    {
+      "wacc": 0.18,
+      "growth": 0.03,
+      "price": 2.749821860661706
+    },
+    {
+      "wacc": 0.18,
+      "growth": 0.04,
+      "price": 2.743934825139693
+    },
+    {
+      "wacc": 0.2,
+      "growth": 0.02,
+      "price": 2.60417685349442
+    },
+    {
+      "wacc": 0.2,
+      "growth": 0.03,
+      "price": 2.5975559906233707
+    },
+    {
+      "wacc": 0.2,
+      "growth": 0.04,
+      "price": 2.5900912959123783
+    }
+  ],
+  "straight_debt_floor_diagnostic": 12.933956538030088,
+  "status": "Working standalone instrument sensitivities. The separate downside-exit, comparables and committee memo provide the conditional range/action; instrument and transaction qualifications remain."
+}
